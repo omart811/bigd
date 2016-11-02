@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float-data</title>
+     <link rel="stylesheet" type="text/css" href="DataTables/css/jquery.dataTables.css">
+     <link href="css/style.default.css" rel="stylesheet">
+     <style type="text/css">
+         body{
+             background-color:beige;
+             margin-top: 10px;
+         }
+    </style>
+</head>
+<body>
+   
+     <div class="container">
+      <div class="row">
+
+    <div class="row">
+        <div id="contentTable_processing" class="dataTables_processing" style="display: none;">正在加载中...</div>
+    </div>
+<table class="table table-striped table-bordered table-hover dataTable no-footer" id="contentTable" role="grid" aria-describedby="contentTable_info" style="width:100%;">
+
+    <thead>
+        <tr role="row">
+            
+            <th class="sorting" tabindex="0" aria-controls="contentTable" rowspan="1" colspan="1" aria-label="煤种: activate to sort column ascending" >煤种</th>
+            <th class="sorting" tabindex="0" aria-controls="contentTable" rowspan="1" colspan="1" aria-label="品种: activate to sort column ascending" >品种</th>
+            <th class="sorting" tabindex="0" aria-controls="contentTable" rowspan="1" colspan="1" aria-label="灰分等级: activate to sort column ascending" >灰分等级</th>
+            <th class="sorting" tabindex="0" aria-controls="contentTable" rowspan="1" colspan="1" aria-label="挥发分等级: activate to sort column ascending">挥发分等级</th>
+            <th class="sorting" tabindex="0" aria-controls="contentTable" rowspan="1" colspan="1" aria-label="硫份等级: activate to sort column ascending">硫份等级</th>
+            
+            <th class="sorting" tabindex="0" aria-controls="contentTable" rowspan="1" colspan="1" aria-label="价格类型: activate to sort column ascending" >价格类型</th>
+            <th class="sorting_desc" tabindex="0" aria-controls="contentTable" rowspan="1" colspan="1" aria-label="发布日期: activate to sort column ascending"  aria-sort="descending">发布日期</th>
+            <th class="sorting" tabindex="0" aria-controls="contentTable" rowspan="1" colspan="1" aria-label="数据周期: activate to sort column ascending" >数据周期</th>
+            <th class="sorting_disabled" rowspan="1" colspan="1" aria-label="趋势" >趋势</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr role="row" class="odd">
+            
+            <td>炼焦烟煤</td>
+            <td>洗精煤</td>
+            
+            
+            <td>[10,16)</td>
+            <td>[10,20)</td>
+            <td>[1,1.5)</td>
+           
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>日报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012679" obj-title="" href="d-charts.html"><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+          
+            <td>炼焦烟煤</td>
+            <td>洗精煤</td>
+            
+            
+            <td>[10,16)</td>
+            <td>[10,20)</td>
+            <td>[1,1.5)</td>
+            
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012680" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+           
+            <td>一般烟煤</td>
+            <td>动力煤</td>
+           
+            
+            <td>[16,29)</td>
+            <td>&gt;=40</td>
+            <td>[1,1.5)</td>
+            
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012813" obj-title="" href="README.md"><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+           
+            <td>一般烟煤</td>
+            <td>动力煤</td>
+           
+           
+            <td>[10,16)</td>
+            <td>[28,37)</td>
+            <td>[1,1.5)</td>
+            
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012823" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+            
+            <td>弱粘煤</td>
+            <td>混煤</td>
+            
+            
+            <td>[10,16)</td>
+            <td>[28,37)</td>
+            <td>[0.5,1)</td>
+            
+            <td>坑口价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012828" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+           
+            <td>一般烟煤</td>
+            <td>动力煤</td>
+           
+            
+            <td>[10,16)</td>
+            <td>[28,37)</td>
+            <td>[1,1.5)</td>
+            
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012830" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+           
+            <td>弱粘煤</td>
+            <td>混煤</td>
+           
+           
+            <td>[10,16)</td>
+            <td>[28,37)</td>
+            <td>[0.5,1)</td>
+           
+            <td>坑口价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012834" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+            
+            <td>一般烟煤</td>
+            <td>动力煤</td>
+            
+            
+            <td>[10,16)</td>
+            <td>[28,37)</td>
+            <td>[1,1.5)</td>
+            
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012836" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+           
+            <td>弱粘煤</td>
+            <td>混煤</td>
+            
+          
+            <td>[10,16)</td>
+            <td>[28,37)</td>
+            <td>[0.5,1)</td>
+           
+            <td>坑口价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012840" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+           
+            <td>无烟煤</td>
+            <td>末煤</td>
+            
+       
+            <td>[10,16)</td>
+            <td>[6,10)</td>
+            <td>[1,1.5)</td>
+            
+            <td>坑口价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>日报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012849" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+          
+            <td>无烟煤</td>
+            <td>末煤</td>
+            
+          
+            <td>[10,16)</td>
+            <td>[6,10)</td>
+            <td>[1,1.5)</td>
+            
+            <td>坑口价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012852" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+          
+            <td>无烟煤</td>
+            <td>洗末煤</td>
+           
+            <td>[10,16)</td>
+            <td>[6,10)</td>
+            <td>[1,1.5)</td>
+            
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>日报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012855" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+          
+            <td>无烟煤</td>
+            <td>洗末煤</td>
+          
+            <td>[10,16)</td>
+            <td>[6,10)</td>
+            <td>[1,1.5)</td>
+            
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012856" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+            
+            <td>无烟煤</td>
+            <td>洗小块</td>
+         
+            <td>[10,16)</td>
+            <td>[6,10)</td>
+            <td>[1,1.5)</td>
+            
+            <td>坑口价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>日报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012857" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+            
+            <td>无烟煤</td>
+            <td>洗小块</td>
+          
+            <td>&lt;10</td>
+            <td>[6,10)</td>
+            <td>[1,1.5)</td>
+            
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>日报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012858" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd">
+            
+            <td>炼焦烟煤</td>
+            <td>洗精煤</td>
+           
+            
+            <td>[10,16)</td>
+            <td>[10,20)</td>
+            <td>[1,1.5)</td>
+            
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>日报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012679" obj-title="" href="d-charts.html"><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+          
+            <td>炼焦烟煤</td>
+            <td>洗精煤</td>
+           
+           
+            <td>[10,16)</td>
+            <td>[10,20)</td>
+            <td>[1,1.5)</td>
+            
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012680" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+         
+            <td>一般烟煤</td>
+            <td>动力煤</td>
+           
+           
+            <td>[16,29)</td>
+            <td>&gt;=40</td>
+            <td>[1,1.5)</td>
+            
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012813" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+          
+            <td>一般烟煤</td>
+            <td>动力煤</td>
+           
+           
+            <td>[10,16)</td>
+            <td>[28,37)</td>
+            <td>[1,1.5)</td>
+            
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012823" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+         
+            <td>弱粘煤</td>
+            <td>混煤</td>
+           
+            <td>[10,16)</td>
+            <td>[28,37)</td>
+            <td>[0.5,1)</td>
+            
+            <td>坑口价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012828" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+           
+            <td>一般烟煤</td>
+            <td>动力煤</td>
+         
+            
+            <td>[10,16)</td>
+            <td>[28,37)</td>
+            <td>[1,1.5)</td>
+           
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012830" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+          
+            <td>弱粘煤</td>
+            <td>混煤</td>
+            
+            <td>[10,16)</td>
+            <td>[28,37)</td>
+            <td>[0.5,1)</td>
+            
+            <td>坑口价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012834" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+         
+            <td>一般烟煤</td>
+            <td>动力煤</td>
+          
+            <td>[10,16)</td>
+            <td>[28,37)</td>
+            <td>[1,1.5)</td>
+            
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012836" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+           
+            <td>弱粘煤</td>
+            <td>混煤</td>
+           
+            <td>[10,16)</td>
+            <td>[28,37)</td>
+            <td>[0.5,1)</td>
+            
+            <td>坑口价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012840" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+          
+            <td>无烟煤</td>
+            <td>末煤</td>
+           
+            <td>[10,16)</td>
+            <td>[6,10)</td>
+            <td>[1,1.5)</td>
+             
+            <td>坑口价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>日报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012849" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+           
+            <td>无烟煤</td>
+            <td>末煤</td>
+           
+            <td>[10,16)</td>
+            <td>[6,10)</td>
+            <td>[1,1.5)</td>
+             
+            <td>坑口价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012852" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+         
+            <td>无烟煤</td>
+            <td>洗末煤</td>
+          
+            <td>[10,16)</td>
+            <td>[6,10)</td>
+            <td>[1,1.5)</td>
+             
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>日报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012855" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+          
+            <td>无烟煤</td>
+            <td>洗末煤</td>
+           
+            <td>[10,16)</td>
+            <td>[6,10)</td>
+            <td>[1,1.5)</td>
+             
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012856" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+            
+            <td>无烟煤</td>
+            <td>洗小块</td>
+        
+            <td>[10,16)</td>
+            <td>[6,10)</td>
+            <td>[1,1.5)</td>
+            
+            <td>坑口价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>日报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012857" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+        
+            <td>无烟煤</td>
+            <td>洗小块</td>
+            
+            <td>&lt;10</td>
+            <td>[6,10)</td>
+            <td>[1,1.5)</td>
+             
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>日报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012858" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd">
+          
+            <td>炼焦烟煤</td>
+            <td>洗精煤</td>
+           
+            
+            <td>[10,16)</td>
+            <td>[10,20)</td>
+            <td>[1,1.5)</td>
+             
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>日报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012679" obj-title="" href="d-charts.html"><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+         
+            <td>炼焦烟煤</td>
+            <td>洗精煤</td>
+          
+            
+            <td>[10,16)</td>
+            <td>[10,20)</td>
+            <td>[1,1.5)</td>
+             
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012680" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+           
+            <td>一般烟煤</td>
+            <td>动力煤</td>
+          
+          
+            <td>[16,29)</td>
+            <td>&gt;=40</td>
+            <td>[1,1.5)</td>
+             
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012813" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+          
+            <td>一般烟煤</td>
+            <td>动力煤</td>
+          
+           
+            <td>[10,16)</td>
+            <td>[28,37)</td>
+            <td>[1,1.5)</td>
+             
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012823" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+          
+            <td>弱粘煤</td>
+            <td>混煤</td>
+           
+          
+            <td>[10,16)</td>
+            <td>[28,37)</td>
+            <td>[0.5,1)</td>
+             
+            <td>坑口价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012828" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+         
+            <td>一般烟煤</td>
+            <td>动力煤</td>
+           
+          
+            <td>[10,16)</td>
+            <td>[28,37)</td>
+            <td>[1,1.5)</td>
+             
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012830" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+          
+            <td>弱粘煤</td>
+            <td>混煤</td>
+           
+          
+            <td>[10,16)</td>
+            <td>[28,37)</td>
+            <td>[0.5,1)</td>
+             
+            <td>坑口价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012834" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+           
+            <td>一般烟煤</td>
+            <td>动力煤</td>
+            
+           
+            <td>[10,16)</td>
+            <td>[28,37)</td>
+            <td>[1,1.5)</td>
+             
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012836" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+        
+            <td>弱粘煤</td>
+            <td>混煤</td>
+         
+          
+            <td>[10,16)</td>
+            <td>[28,37)</td>
+            <td>[0.5,1)</td>
+             
+            <td>坑口价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012840" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+            
+            <td>无烟煤</td>
+            <td>末煤</td>
+            
+           
+            <td>[10,16)</td>
+            <td>[6,10)</td>
+            <td>[1,1.5)</td>
+             
+            <td>坑口价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>日报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012849" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+           
+            <td>无烟煤</td>
+            <td>末煤</td>
+       
+       
+            <td>[10,16)</td>
+            <td>[6,10)</td>
+            <td>[1,1.5)</td>
+             
+            <td>坑口价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012852" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+           
+            <td>无烟煤</td>
+            <td>洗末煤</td>
+            
+            
+            <td>[10,16)</td>
+            <td>[6,10)</td>
+            <td>[1,1.5)</td>
+             
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>日报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012855" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+        
+            <td>无烟煤</td>
+            <td>洗末煤</td>
+          
+         
+            <td>[10,16)</td>
+            <td>[6,10)</td>
+            <td>[1,1.5)</td>
+             
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>周报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012856" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="even" >
+        
+            <td>无烟煤</td>
+            <td>洗小块</td>
+           
+         
+            <td>[10,16)</td>
+            <td>[6,10)</td>
+            <td>[1,1.5)</td>
+             
+            <td>坑口价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>日报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012857" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+        <tr role="row" class="odd" >
+            
+            <td>无烟煤</td>
+            <td>洗小块</td>
+            
+            <td>&lt;10</td>
+            <td>[6,10)</td>
+            <td>[1,1.5)</td>
+             
+            <td>车板价</td>
+            <td class="sorting_1">2015-05-04</td>
+            <td>日报</td>
+            <td><a style="padding:2px 8px;" class="btn btn-sm model" obj-id="5010012858" obj-title=""><i class="fa fa-bar-chart-o"></i></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+        </div><!-- row -->
+        </div>
+   <script src="js/jquery-1.11.1.min.js"></script>       
+   <script src="js/bootstrap.min.js"></script>    
+<script type="text/javascript" charset="utf8" src="DataTables/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8" src="DataTables/ready.js"></script>
+<!--<script src="charts-js/data-dt-chart1.js"></script>-->
+</body>
+</html>

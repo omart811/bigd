@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+    <title>全国煤炭交易数据分析平台</title>
+
+    <link href="css/style.default.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+   <style type="text/css">
+     .anchorBL {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status"><i class="fa fa-spinner fa-spin"></i>
+        </div>
+    </div>
+
+    <section>
+        <div class="leftpanel">
+            <div class="logopanel">
+                <h1><span>[</span>全国煤炭交易数据分析平台<span>]</span></h1>
+            </div>
+            <!-- logopanel -->
+
+            <div class="leftpanelinner">
+                <!-- This is only visible to small devices -->
+                <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                    <div class="media userlogged">
+                        <img alt="" src="images/photos/loggeduser.png" class="media-object">
+                        <div class="media-body">
+                            <h4>是个名字</h4>
+                            <span>"这个只有在小型设备上可见"</span>
+                        </div>
+                    </div>
+
+                    <h5 class="sidebartitle actitle">账户</h5>
+                    <ul class="nav nav-pills nav-stacked nav-bracket mb30">
+                        <li><a href="profile.html"><i class="fa fa-user"></i> <span>介绍</span></a>
+                        </li>
+                        <li><a href=""><i class="fa fa-cog"></i> <span>账户设置</span></a>
+                        </li>
+                        <li><a href=""><i class="fa fa-question-circle"></i> <span>帮助</span></a>
+                        </li>
+                        <li><a href="signout.html"><i class="fa fa-sign-out"></i> <span>退出</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <h5 class="sidebartitle">导航栏</h5>
+            <!--导航栏的内容-->
+                <ul class="nav nav-pills nav-stacked nav-bracket">
+                    <li><a href="index2.html"><i class="fa fa-home"></i><span>控制台</span></a>
+                    </li>
+                     
+                    <li class="nav-parent"><a href=""><span class="pull-right badge badge-success">4</span><i class="fa fa-envelope-o"></i> <span>煤炭GIS</span></a>
+                        <ul class="children">
+                            <li><a href="gis-out.html"><i class="fa fa-caret-right"></i>煤炭运销</a></li>
+                            <li><a href="gis-position.html"><i class="fa fa-caret-right"></i>煤企分布</a></li>
+                            <li><a href="gis-port.html"><i class="fa fa-caret-right"></i>港口动态</a></li> 
+                            <li><a href="gis-need.html"><i class="fa fa-caret-right"></i>需求企业</a></li>                                                                           <li><a href="gis-lushu-cs.html"><i class="fa fa-caret-right"></i>货运追踪</a></li>
+                            <li><a href="gis-tielu.html"><i class="fa fa-caret-right"></i>铁路运输</a></li>
+                            <li><a href="gis-lushu-cs.html"><span class="pull-right badge badge-danger">开发中</span><i class="fa fa-caret-right"></i>船运追踪</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-parent active"><a href=""><i class="fa fa-edit"></i> <span>图解煤炭</span></a>
+                        <ul class="children" style="display:block">
+                            <li><a href="gis-kucun.html"><i class="fa fa-caret-right"></i>煤炭产运需</a></li>
+                            <li class="active"><a href="gis-jinc.html"><i class="fa fa-caret-right"></i>煤炭进出口</a></li>
+                        </ul>
+                    </li>
+                     <li><a href="price.html"><i class="fa fa-th-list"></i> <span>价格中心</span></a>
+                    <li class="nav-parent"><a href=""><i class="fa fa-suitcase"></i><span>预警预测</span></a>
+                        <ul class="children">
+                            <li><a href="yuce.html"><i class="fa fa-caret-right"></i>景气监测</a></li>
+                            <li><a href="yuce2.html"><i class="fa fa-caret-right"></i>环比监测</a></li>
+                            <li><a href="yuce3.html"><i class="fa fa-caret-right"></i>同比监测</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-parent"><a href=""><i class="fa fa-file-text"></i><span>煤炭资讯</span></a>
+                        <ul class="children">                
+                            <li><a href="list.html"><i class="fa fa-caret-right"></i>独家观点</a></li>
+                            <li><a href="list1.html"><i class="fa fa-caret-right"></i>新闻动态</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gongyl.html"><i class="fa fa-th-list"></i><span>煤炭供应链查询</span></a></li>
+                    <li ><a href="data-center.html"><i class="fa fa-th-list"></i><span>数据中心</span></a></li>
+                    <li class="nav-parent"><a href=""><i class="fa fa-bug"></i> <span>个人中心</span></a>
+                        <ul class="children">
+                            <li><a href="profile.html"><i class="fa fa-caret-right"></i>个人主页</a></li>
+                            <li><a href="expert-directory.html"><i class="fa fa-caret-right"></i>行业专家</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <!--导航栏的内容结束-->
+                <div class="infosummary">
+                    <h5 class="sidebartitle">主要煤炭数据展示</h5>
+                    <ul>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">环渤海动力煤指数</span>
+                                <h4>414元/吨 +0.34%</h4>
+                            </div>
+                            <div id="sidebar-chart" class="chart"></div>
+                        </li>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">动力煤期货价格</span>
+                                <h4>TC 1509 422+1.5%</h4>
+                            </div>
+                            <div id="sidebar-chart2" class="chart"></div>
+                        </li>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">海运煤炭运价综合指数</span>
+                                <h4>45.63+7.55%</h4>
+                            </div>
+                            <div id="sidebar-chart3" class="chart"></div>
+                        </li>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">进口煤炭数量</span>
+                                <h4>2200万吨</h4>
+                            </div>
+                            <div id="sidebar-chart4" class="chart"></div>
+                        </li>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">港口库存总量</span>
+                                <h4>3300万吨</h4>
+                            </div>
+                            <div id="sidebar-chart5" class="chart"></div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- infosummary -->
+                <!-- infosummary -->
+            </div>
+            <!-- leftpanelinner -->
+        </div>
+        <!-- leftpanel -->
+
+        <div class="mainpanel">
+            <div class="headerbar">
+                <a class="menutoggle"><i class="fa fa-bars"></i></a>
+
+                <form class="searchform" action="index.html" method="post">
+                    <input type="text" class="form-control" name="keyword" placeholder="搜索你想要的..." />
+                </form>
+
+                <div class="header-right">
+                    <ul class="headermenu">
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn btn-default dropdown-toggle tp-icon" data-toggle="dropdown">
+                                    <i class="glyphicon glyphicon-user"></i>
+                                    <span class="badge">2</span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-head pull-right">
+                                    <h5 class="title">2 个新注册的用户</h5>
+                                    <ul class="dropdown-list user-list">
+                                        <li class="new">
+                                            <div class="thumb">
+                                                <a href="">
+                                                    <img src="images/photos/user1.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h5><a href="">张三(@draniem)</a> <span class="badge badge-success">new</span></h5>
+                                            </div>
+                                        </li>
+                                        <li class="new">
+                                            <div class="thumb">
+                                                <a href="">
+                                                    <img src="images/photos/user2.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h5><a href="">李四 (@zaham)</a> <span class="badge badge-success">new</span></h5>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb">
+                                                <a href="">
+                                                    <img src="images/photos/user3.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h5><a href="">王五(@wenocar)</a></h5>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb">
+                                                <a href="">
+                                                    <img src="images/photos/user4.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h5><a href="">赵六 (@nusja)</a></h5>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb">
+                                                <a href="">
+                                                    <img src="images/photos/user5.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h5><a href="">田七 (@lane_kitmare)</a></h5>
+                                            </div>
+                                        </li>
+                                        <li class="new"><a href="">查看所有注册用户</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn btn-default dropdown-toggle tp-icon" data-toggle="dropdown">
+                                    <i class="glyphicon glyphicon-envelope"></i>
+                                    <span class="badge">1</span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-head pull-right">
+                                    <h5 class="title">你有 1 条新的信息</h5>
+                                    <ul class="dropdown-list gen-list">
+                                        <li class="new">
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user1.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">张三 <span class="badge badge-success">new</span></span>
+                                                <span class="msg">注册时候的信息..</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user2.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">李四</span>
+                                                <span class="msg">注册相关信息..</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user3.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">王五</span>
+                                                <span class="msg">重点的注册信息..</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user4.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">赵六</span>
+                                                <span class="msg">注册时候的信息..</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user5.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">田七</span>
+                                                <span class="msg">注册的重点信息.</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new"><a href="">阅读所有的.</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn btn-default dropdown-toggle tp-icon" data-toggle="dropdown">
+                                    <i class="glyphicon glyphicon-globe"></i>
+                                    <span class="badge">5</span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-head pull-right">
+                                    <h5 class="title">你有 5 条提示</h5>
+                                    <ul class="dropdown-list gen-list">
+                                        <li class="new">
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user4.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">张三 <span class="badge badge-success">new</span></span>
+                                                <span class="msg">现在关注你</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new">
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user5.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">李四 <span class="badge badge-success">new</span></span>
+                                                <span class="msg">现在关注你</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new">
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user3.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">王五 <span class="badge badge-success">new</span></span>
+                                                <span class="msg">likes your recent status</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new">
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user3.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">赵六<span class="badge badge-success">new</span></span>
+                                                <span class="msg">下载你的工作报表</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new">
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user3.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">田七<span class="badge badge-success">new</span></span>
+                                                <span class="msg">看了你2条信息</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new"><a href="">查看所有的动态</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    <img src="images/photos/loggeduser.png" alt="" />李大国
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                                    <li><a href="profile.html"><i class="glyphicon glyphicon-user"></i>我的信息</a>
+                                    </li>
+                                    <li><a href="#"><i class="glyphicon glyphicon-cog"></i> 登录设置</a>
+                                    </li>
+                                    <li><a href="#"><i class="glyphicon glyphicon-question-sign"></i> 帮助</a>
+                                    </li>
+                                    <li><a href="signin.html"><i class="glyphicon glyphicon-log-out"></i> 登出</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <button id="chatview" class="btn btn-default tp-icon chat-icon">
+                                <i class="glyphicon glyphicon-comment"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- header-right -->
+
+            </div>
+            <!-- headerbar -->
+
+            <div class="pageheader">
+                <h2><i class="fa fa-home"></i>图解煤炭<span>我们致力用最专业的服务助力企业实力提升.</span></h2>
+                <div class="breadcrumb-wrapper">
+                    <span class="label">你现在在这里:</span>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">图解煤炭</a>
+                        </li>
+                        <li class="active">煤炭进出口</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="contentpanel" id="jingkou">
+
+                <div class="row">
+
+                    <div class="panel panel-default">
+
+                        <div class="panel-heading padding10">                                                                       
+                        	日期：                                                                 
+                            <select id="selDate" class="btn btn-default" onchange="changeDate()">
+                            
+                                <option value="1" >2015-05</option>
+                                <option value="2" >2015-04</option>
+                                <option value="3" >2015-03</option>
+                                <option value="4" >2015-02</option>
+                                <option value="5" >2015-01</option>
+                                <option value="6" >2014-12</option>
+                                <option value="7">2014-11</option>
+
+                            </select>               
+                                <input type="button" class="btn btn-success" value="进口" onclick="creatJkChart()"/>
+                                <input type="button" class="btn btn-warning" value="出口" onclick="creatCkChart()"/> 
+                           
+                        </div>
+                        <!-- panel-heading -->
+                        
+                    </div>
+                    <!-- panel -->
+
+                </div>
+                <!-- row -->
+
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading padding5">
+                                <div id="chart_fsJk" class="ex-line-chart" style="width: 100%; height: 330px; margin-bottom: 20px"></div>
+                            </div>
+                        </div>
+                        <!-- panel -->
+                    </div>
+                    <!-- col-sm-9 -->
+
+                    <div class="col-sm-6 col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-title padding5">
+                               <div >
+								<i class="fa fa-reorder"></i> 煤种进口情况
+							    </div>
+                               <div id="btnGroupJinKouMeiZhong" class="btn-group" data-toggle="buttons">
+                                   <label class="btn btn-default active" onclick="onMeiZhongBtnClick(0,&quot;全部&quot;)" labelgroupindex="0"> <input type="radio" class="toggle " btngroupindex="0" >全部</label>
+                                   <label class="btn btn-default" onclick="onMeiZhongBtnClick(1,&quot;其他烟煤&quot;)" labelgroupindex="1"> <input type="radio" class="toggle" btngroupindex="1">其他烟煤</label>
+                                   <label class="btn btn-default" onclick="onMeiZhongBtnClick(2,&quot;褐煤&quot;)" labelgroupindex="2"> <input type="radio" class="toggle" btngroupindex="2">褐煤</label>
+                                   <label class="btn btn-default" onclick="onMeiZhongBtnClick(3,&quot;炼焦烟煤&quot;)" labelgroupindex="3"> <input type="radio" class="toggle" btngroupindex="3">炼焦烟煤</label>
+                                   <label class="btn btn-default" onclick="onMeiZhongBtnClick(4,&quot;无烟煤&quot;)" labelgroupindex="4"> <input type="radio" class="toggle" btngroupindex="4">无烟煤</label>
+                                   <label class="btn btn-default" onclick="onMeiZhongBtnClick(5,&quot;其他煤&quot;)" labelgroupindex="5"> <input type="radio" class="toggle" btngroupindex="5">其他煤</label>
+                               </div>
+								<div id="processBarsMeiZhong" class="progress" style="height:20px;"><div class="progress-bar" style="width: 0%; background-color: #e19c13" title="全部:0%"> <span>全部:0%</span> </div><div class="progress-bar" style="width: 36.02%; background-color: #2f9fc9" title="其他烟煤:36.02%"> <span>其他烟煤:36.02%</span> </div><div class="progress-bar" style="width: 31.41%; background-color: #b25e6c" title="褐煤:31.41%"> <span>褐煤:31.41%</span> </div><div class="progress-bar" style="width: 17.3%; background-color: #e85531" title="炼焦烟煤:17.3%"> <span>炼焦烟煤:17.3%</span> </div><div class="progress-bar" style="width: 8.61%; background-color: #966acd" title="无烟煤:8.61%"> <span>无烟煤:8.61%</span> </div><div class="progress-bar" style="width: 6.63%; background-color: #69af13" title="其他煤:6.63%"> <span>其他煤:6.63%</span> </div></div>
+
+                                <div id="chart_mzjk" class="ex-line-chart" style="width: 100%; height: 240px;"></div>
+                                
+                            </div>
+                        </div>
+                        <!-- panel -->
+
+                    </div>
+                    <!-- col-sm-6 -->
+
+                </div>
+                <!-- row -->
+                
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-default padding5">
+                            <div id="subcharts2" class="ex-line-chart" style="width: 100%; height: 300px;"></div>
+                            </div>
+                        </div>
+                        <!-- panel -->
+                    </div>
+                    <!-- col-sm-6 -->
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading padding5">
+                            <div id="subcharts3" class="ex-line-chart" style="width: 100%; height: 300px;"></div>
+                            </div>
+                        </div>
+                        <!-- panel -->
+                    </div>
+                    <!-- col-sm-6 -->
+                    <div class="col-sm-6 col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading padding5">
+                            <div id="subcharts4" class="ex-line-chart" style="width: 100%; height: 300px;"></div>
+                            </div>
+                        </div>
+                        <!-- panel -->
+                    </div>
+                    <!-- col-sm-9 -->
+
+                </div>
+                <!-- row -->
+            </div>
+            <!-- contentpanel -->
+                
+            <div class="contentpanel" id="chukou">
+
+                <div class="row">
+
+                    <div class="panel panel-default">
+
+                        <div class="panel-heading padding10">                                                                       
+                        	日期：                                                                 
+                            <select id="selDate" class="btn btn-default" onchange="changeDate2()">
+                            
+                                <option value="1" >2015-05</option>
+                                <option value="2" >2015-04</option>
+                                <option value="3" >2015-03</option>
+                                <option value="4" >2015-02</option>
+                                <option value="5" >2015-01</option>
+                                <option value="6" >2014-12</option>
+                                <option value="7">2014-11</option>
+
+                            </select>               
+                                <input type="button" class="btn btn-warning" value="进口" onclick="creatJkChart()"/>
+                                <input type="button" class="btn btn-success" value="出口" onclick="creatCkChart()"/> 
+                           
+                        </div>
+                        <!-- panel-heading -->
+                        
+                    </div>
+                    <!-- panel -->
+
+                </div>
+                <!-- row -->
+
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading padding5">
+                                <div id="chart_gbCk" class="ex-line-chart" style="width: 100%; height: 300px;"></div>
+                            </div>
+                        </div>
+                        <!-- panel -->
+                    </div>
+                    <!-- col-sm-9 -->
+
+                    <div class="col-sm-6 col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-title padding5">
+                                <div id="chart_mzCk" class="ex-line-chart" style="width: 100%; height: 300px;"></div>
+                                
+                            </div>
+                        </div>
+                        <!-- panel -->
+
+                    </div>
+                    <!-- col-sm-6 -->
+
+                </div>
+                <!-- row -->
+                
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-default padding5">
+                            <div id="chart_mzCkJj" class="ex-line-chart" style="width: 100%; height: 300px;"></div>
+                            </div>
+                        </div>
+                        <!-- panel -->
+                    </div>
+                    <!-- col-sm-6 -->
+
+                    <div class="col-sm-6 col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading padding5">
+                            <div id="chart_cktop3" class="ex-line-chart" style="width: 100%; height: 300px;"></div>
+                            </div>
+                        </div>
+                        <!-- panel -->
+                    </div>
+                    <!-- col-sm-6 -->
+
+                </div>
+                <!-- row -->
+            </div>
+            <!-- contentpanel -->
+        </div>
+        <!--mainpanel -->
+
+
+
+        <div class="rightpanel">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#rp-alluser" data-toggle="tab"><i class="fa fa-users"></i></a>
+                </li>
+                <li><a href="#rp-favorites" data-toggle="tab"><i class="fa fa-heart"></i></a>
+                </li>
+                <li><a href="#rp-history" data-toggle="tab"><i class="fa fa-clock-o"></i></a>
+                </li>
+                <li><a href="#rp-settings" data-toggle="tab"><i class="fa fa-gear"></i></a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="rp-alluser">
+                    <h5 class="sidebartitle">在线的人</h5>
+                    <ul class="chatuserlist">
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/userprofile.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>张三</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user1.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <span class="pull-right badge badge-danger">2</span>
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user2.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user3.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user4.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                    </ul>
+
+                    <div class="mb30"></div>
+
+                    <h5 class="sidebartitle">Offline Users</h5>
+                    <ul class="chatuserlist">
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user5.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>Eileen Sideways</strong>
+                                    <small>Los Angeles, CA</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user2.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user3.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>Nusja Nawancali</strong>
+                                    <small>Bangkok, Thailand</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user4.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user5.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user4.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user5.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="rp-favorites">
+                    <h5 class="sidebartitle">喜欢的</h5>
+                    <ul class="chatuserlist">
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user2.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user1.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user3.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user4.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user5.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="rp-history">
+                    <h5 class="sidebartitle">历史</h5>
+                    <ul class="chatuserlist">
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user4.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>王五</strong>
+                                    <small>你好，咱们今天下午见面可以吗？在花园~！.</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user2.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>王五</strong>
+                                    <small>你好，咱们今天下午见面可以吗？在花园~！.</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user3.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>王五</strong>
+                                    <small>你好，咱们今天下午见面可以吗？在花园~！.</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane pane-settings" id="rp-settings">
+
+                    <h5 class="sidebartitle mb20">设置</h5>
+                    <div class="form-group">
+                        <label class="col-xs-8 control-label">现在不现在的</label>
+                        <div class="col-xs-4 control-label">
+                            <div class="toggle toggle-success"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-xs-8 control-label">允许历史</label>
+                        <div class="col-xs-4 control-label">
+                            <div class="toggle toggle-success"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-xs-8 control-label">现在所有名字</label>
+                        <div class="col-xs-4 control-label">
+                            <div class="toggle-chat1 toggle-success"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-xs-8 control-label">显示所在地</label>
+                        <div class="col-xs-4 control-label">
+                            <div class="toggle toggle-success"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- tab-pane -->
+
+            </div>
+            <!-- tab-content -->
+        </div>
+        <!-- rightpanel -->
+    </section>
+    <script src="js/jquery-1.11.1.min.js"></script> 
+    <!--    layer的引入源文件-->
+      <script src="layer/layer.js"></script>  
+     <script src="layer/extend/layer.ext.js"></script>     
+  <!--    layer的控制-->
+    <script src="js/layer-waiyun.js"></script>   
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <!--jquery ui-->
+    <script src="js/jquery-ui-1.10.3.min.js"></script>
+    <!--强大的框架-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--Modernizr：专为HTML5和CSS3开发的功能检测类库-->
+    <script src="js/modernizr.min.js"></script>
+    <!--绘制波谱图标的插件-->
+    <script src="js/jquery.sparkline.min.js"></script>
+    <!--消失动画的控件，可以有各种的选项-->
+    <script src="js/toggles.min.js"></script>
+    <!--用于支持视网膜设备-->
+    <script src="js/retina.min.js"></script>
+    <!--Cookie能为用户提供很多的使得，例如购物网站存储用户曾经浏览过的产品列表，或者门户网站记住用户喜欢选择浏览哪类新闻。 在用户允许的情况下，还可以存储用户的登录信息，使得用户在访问网站时不必每次都键入这些信息-->
+    <script src="js/jquery.cookies.js"></script>
+
+    <!--Morris.js 是一个轻量级的 JS 库，使用 jQuery 和 Raphaël 来生成各种时序图-->
+    <script src="js/morris.min.js"></script>
+    <!--下方JS用于在网页中绘制矢量图形的 Javascript 库-->
+    <script src="js/raphael-2.1.0.min.js"></script>
+    <!--下方JS优化多选框-->
+    <script src="js/chosen.jquery.min.js"></script>
+    <!--echart的控件-->
+    <!-- ECharts单文件引入 -->
+    <script src="js/macarons.js"></script>
+    <script src="js/echarts.js"></script>
+    
+    <script src="charts-js/gis-jinc.js"></script>
+    <script src="js/custom.js"></script>
+    
+    
+<!--<script src="js/dashboard.js"></script>-->
+
+
+</body>
+
+</html>

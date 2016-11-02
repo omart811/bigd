@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+  <title>全国煤炭交易数据分析平台</title>
+
+  <link href="css/style.default.css" rel="stylesheet">
+<link href="css/morris.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+</div>
+
+<section>
+<div class="leftpanel">
+    <div class="logopanel">
+        <h1><span>[</span>全国煤炭交易数据分析平台<span>]</span></h1>
+    </div><!-- logopanel -->
+
+    <div class="leftpanelinner">
+    <!-- This is only visible to small devices -->
+        <div class="visible-xs hidden-sm hidden-md hidden-lg">
+            <div class="media userlogged">
+                <img alt="" src="images/photos/loggeduser.png" class="media-object">
+                <div class="media-body">
+                    <h4>是个名字</h4>
+                    <span>"这个只有在小型设备上可见"</span>
+                </div>
+            </div>
+
+            <h5 class="sidebartitle actitle">账户</h5>
+            <ul class="nav nav-pills nav-stacked nav-bracket mb30">
+              <li><a href="profile.html"><i class="fa fa-user"></i> <span>介绍</span></a></li>
+              <li><a href=""><i class="fa fa-cog"></i> <span>账户设置</span></a></li>
+              <li><a href=""><i class="fa fa-question-circle"></i> <span>帮助</span></a></li>
+              <li><a href="signout.html"><i class="fa fa-sign-out"></i> <span>退出</span></a></li>
+            </ul>
+        </div>
+    <h5 class="sidebartitle">导航栏</h5>
+   <!--导航栏的内容-->
+                <ul class="nav nav-pills nav-stacked nav-bracket">
+                    <li><a href="index2.html"><i class="fa fa-home"></i><span>控制台</span></a>
+                    </li><li class="nav-parent"><a href=""><span class="pull-right badge badge-success">4</span><i class="fa fa-envelope-o"></i> <span>煤炭GIS</span></a>
+                        <ul class="children">
+                            <li><a href="gis-out.html"><i class="fa fa-caret-right"></i>煤炭运销</a></li>
+                            <li><a href="gis-position.html"><i class="fa fa-caret-right"></i>煤企分布</a></li>
+                            <li><a href="gis-port.html"><i class="fa fa-caret-right"></i>港口动态</a></li> 
+                            <li><a href="gis-need.html"><i class="fa fa-caret-right"></i>需求企业</a></li>                                                                        <li><a href="gis-lushu-cs.html"><i class="fa fa-caret-right"></i>货运追踪</a></li>
+                            <li><a href="gis-tielu.html"><i class="fa fa-caret-right"></i>铁路运输</a></li>
+                            <li><a href="gis-lushu-cs.html"><span class="pull-right badge badge-danger">开发中</span><i class="fa fa-caret-right"></i>船运追踪</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-parent"><a href=""><i class="fa fa-edit"></i> <span>图解煤炭</span></a>
+                        <ul class="children">
+                            <li><a href="gis-kucun.html"><i class="fa fa-caret-right"></i>煤炭产运需</a></li>
+                            <li><a href="gis-jinc.html"><i class="fa fa-caret-right"></i>煤炭进出口</a></li>
+                        </ul>
+                    </li>
+                     <li><a href="price.html"><i class="fa fa-th-list"></i> <span>价格中心</span></a>
+                    <li class="nav-parent  active"><a href=""><i class="fa fa-suitcase"></i><span>预警预测</span></a>
+                        <ul class="children" style="display:block">
+                            <li class=" active"><a href="yuce.html"><i class="fa fa-caret-right"></i>景气监测</a></li>
+                            <li><a href="yuce2.html"><i class="fa fa-caret-right"></i>环比监测</a></li>
+                            <li><a href="yuce3.html"><i class="fa fa-caret-right"></i>同比监测</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-parent"><a href=""><i class="fa fa-file-text"></i><span>煤炭资讯</span></a>
+                        <ul class="children">                
+                            <li><a href="list.html"><i class="fa fa-caret-right"></i>独家观点</a></li>
+                            <li><a href="list1.html"><i class="fa fa-caret-right"></i>新闻动态</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gongyl.html"><i class="fa fa-th-list"></i><span>煤炭供应链查询</span></a></li>
+                    <li><a href="data-center.html"><i class="fa fa-th-list"></i><span>数据中心</span></a></li>
+                    <li class="nav-parent"><a href=""><i class="fa fa-bug"></i> <span>个人中心</span></a>
+                        <ul class="children">
+                            <li ><a href="profile.html"><i class="fa fa-caret-right"></i>个人主页</a></li>
+                            <li><a href="expert-directory.html"><i class="fa fa-caret-right"></i>行业专家</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <!--导航栏的内容结束-->
+                <div class="infosummary">
+                    <h5 class="sidebartitle">主要煤炭数据展示</h5>
+                    <ul>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">环渤海动力煤指数</span>
+                                <h4>414元/吨 +0.34%</h4>
+                            </div>
+                            <div id="sidebar-chart" class="chart"></div>
+                        </li>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">动力煤期货价格</span>
+                                <h4>TC 1509 422+1.5%</h4>
+                            </div>
+                            <div id="sidebar-chart2" class="chart"></div>
+                        </li>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">海运煤炭运价综合指数</span>
+                                <h4>45.63+7.55%</h4>
+                            </div>
+                            <div id="sidebar-chart3" class="chart"></div>
+                        </li>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">进口煤炭数量</span>
+                                <h4>2200万吨</h4>
+                            </div>
+                            <div id="sidebar-chart4" class="chart"></div>
+                        </li>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">港口库存总量</span>
+                                <h4>3300万吨</h4>
+                            </div>
+                            <div id="sidebar-chart5" class="chart"></div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- infosummary -->
+    </div><!-- leftpanelinner -->
+  </div><!-- leftpanel -->
+
+  <div class="mainpanel">
+    <div class="headerbar">
+    <a class="menutoggle"><i class="fa fa-bars"></i></a>
+
+      <form class="searchform" action="index.html" method="post">
+        <input type="text" class="form-control" name="keyword" placeholder="搜索你想要的..." />
+      </form>
+
+      <div class="header-right">
+        <ul class="headermenu">
+          <li>
+            <div class="btn-group">
+              <button class="btn btn-default dropdown-toggle tp-icon" data-toggle="dropdown">
+                <i class="glyphicon glyphicon-user"></i>
+                <span class="badge">2</span>
+              </button>
+              <div class="dropdown-menu dropdown-menu-head pull-right">
+                <h5 class="title">2 个新注册的用户</h5>
+                <ul class="dropdown-list user-list">
+                  <li class="new">
+                    <div class="thumb"><a href=""><img src="images/photos/user1.png" alt="" /></a></div>
+                    <div class="desc">
+                      <h5><a href="">张三(@draniem)</a> <span class="badge badge-success">new</span></h5>
+                    </div>
+                  </li>
+                  <li class="new">
+                    <div class="thumb"><a href=""><img src="images/photos/user2.png" alt="" /></a></div>
+                    <div class="desc">
+                      <h5><a href="">李四 (@zaham)</a> <span class="badge badge-success">new</span></h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="thumb"><a href=""><img src="images/photos/user3.png" alt="" /></a></div>
+                    <div class="desc">
+                      <h5><a href="">王五(@wenocar)</a></h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="thumb"><a href=""><img src="images/photos/user4.png" alt="" /></a></div>
+                    <div class="desc">
+                      <h5><a href="">赵六 (@nusja)</a></h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="thumb"><a href=""><img src="images/photos/user5.png" alt="" /></a></div>
+                    <div class="desc">
+                      <h5><a href="">田七 (@lane_kitmare)</a></h5>
+                    </div>
+                  </li>
+                  <li class="new"><a href="">查看所有注册用户</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="btn-group">
+              <button class="btn btn-default dropdown-toggle tp-icon" data-toggle="dropdown">
+                <i class="glyphicon glyphicon-envelope"></i>
+                <span class="badge">1</span>
+              </button>
+              <div class="dropdown-menu dropdown-menu-head pull-right">
+                <h5 class="title">你有 1 条新的信息</h5>
+                <ul class="dropdown-list gen-list">
+                  <li class="new">
+                    <a href="">
+                    <span class="thumb"><img src="images/photos/user1.png" alt="" /></span>
+                    <span class="desc">
+                      <span class="name">张三 <span class="badge badge-success">new</span></span>
+                      <span class="msg">注册时候的信息..</span>
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                    <span class="thumb"><img src="images/photos/user2.png" alt="" /></span>
+                    <span class="desc">
+                      <span class="name">李四</span>
+                      <span class="msg">注册相关信息..</span>
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                    <span class="thumb"><img src="images/photos/user3.png" alt="" /></span>
+                    <span class="desc">
+                      <span class="name">王五</span>
+                      <span class="msg">重点的注册信息..</span>
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                    <span class="thumb"><img src="images/photos/user4.png" alt="" /></span>
+                    <span class="desc">
+                      <span class="name">赵六</span>
+                      <span class="msg">注册时候的信息..</span>
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                    <span class="thumb"><img src="images/photos/user5.png" alt="" /></span>
+                    <span class="desc">
+                      <span class="name">田七</span>
+                      <span class="msg">注册的重点信息.</span>
+                    </span>
+                    </a>
+                  </li>
+                  <li class="new"><a href="">阅读所有的.</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="btn-group">
+              <button class="btn btn-default dropdown-toggle tp-icon" data-toggle="dropdown">
+                <i class="glyphicon glyphicon-globe"></i>
+                <span class="badge">5</span>
+              </button>
+              <div class="dropdown-menu dropdown-menu-head pull-right">
+                <h5 class="title">你有 5 条提示</h5>
+                <ul class="dropdown-list gen-list">
+                  <li class="new">
+                    <a href="">
+                    <span class="thumb"><img src="images/photos/user4.png" alt="" /></span>
+                    <span class="desc">
+                      <span class="name">张三 <span class="badge badge-success">new</span></span>
+                      <span class="msg">现在关注你</span>
+                    </span>
+                    </a>
+                  </li>
+                  <li class="new">
+                    <a href="">
+                    <span class="thumb"><img src="images/photos/user5.png" alt="" /></span>
+                    <span class="desc">
+                      <span class="name">李四 <span class="badge badge-success">new</span></span>
+                      <span class="msg">现在关注你</span>
+                    </span>
+                    </a>
+                  </li>
+                  <li class="new">
+                    <a href="">
+                    <span class="thumb"><img src="images/photos/user3.png" alt="" /></span>
+                    <span class="desc">
+                      <span class="name">王五 <span class="badge badge-success">new</span></span>
+                      <span class="msg">likes your recent status</span>
+                    </span>
+                    </a>
+                  </li>
+                  <li class="new">
+                    <a href="">
+                    <span class="thumb"><img src="images/photos/user3.png" alt="" /></span>
+                    <span class="desc">
+                      <span class="name">赵六<span class="badge badge-success">new</span></span>
+                      <span class="msg">下载你的工作报表</span>
+                    </span>
+                    </a>
+                  </li>
+                  <li class="new">
+                    <a href="">
+                    <span class="thumb"><img src="images/photos/user3.png" alt="" /></span>
+                    <span class="desc">
+                      <span class="name">田七<span class="badge badge-success">new</span></span>
+                      <span class="msg">看了你2条信息</span>
+                    </span>
+                    </a>
+                  </li>
+                  <li class="new"><a href="">查看所有的动态</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                <img src="images/photos/loggeduser.png" alt="" />
+                李大国
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                <li><a href="profile.html"><i class="glyphicon glyphicon-user"></i>我的信息</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-cog"></i> 登录设置</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-question-sign"></i> 帮助</a></li>
+                <li><a href="signin.html"><i class="glyphicon glyphicon-log-out"></i> 登出</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button id="chatview" class="btn btn-default tp-icon chat-icon">
+                <i class="glyphicon glyphicon-comment"></i>
+            </button>
+          </li>
+        </ul>
+      </div><!-- header-right -->
+
+    </div><!-- headerbar -->
+
+    <div class="pageheader">
+      <h2><i class="fa fa-home"></i> 预警预测 <span>我们致力用最专业的服务助力企业实力提升..</span></h2>
+      <div class="breadcrumb-wrapper">
+        <span class="label">你现在在这里:</span>
+        <ol class="breadcrumb">
+          <li><a href="index.html">预警预测</a></li>
+          <li class="active">景气监测</li>
+        </ol>
+      </div>
+    </div>
+
+
+    <div class="contentpanel">
+      
+      <div class="panel panel-default">
+       <div class="panel-heading">
+           <a  class="btn btn-primary btn-lg" style="margin:2px;" href="yuce.html">景气监测 </a>
+           <a  class="btn btn-info btn-lg" style="margin:2px;" href="yuce2.html">环比监测</a>
+           <a  class="btn btn-success btn-lg" style="margin:2px;" href="yuce3.html">同比监测 </a>         
+        </div><!-- panel-heading -->
+        <div class="panel-heading">
+          <div class="panel-btns">
+            <a href="" class="panel-close">&times;</a>
+            <a href="" class="minimize">&minus;</a>
+          </div><!-- panel-btns -->
+          <h4 class="panel-title">景气预测</h4>
+          <p class="mb15"><b>综述:</b>6月份煤炭产业脱困政策开始显现效应，煤炭供求向平衡方向回归，市场预期好转，价格走势低位趋稳，市场景气指数有所回升；受气候因素、能源结构优化及上年同期煤炭消费基数偏高等多方面因素影响，煤炭需求偏异指数的回落幅度明显超出预期，需求疲软抑制了供求平衡指数、市场预期指数、价格偏异指数及至煤炭市场景气指数的回升幅度。</p>
+         
+        </div><!-- panel-heading -->
+        <div class="panel-body">
+              
+            <div class="row">
+              <div class="col-md-6 mb30">
+                <h5 class="subtitle mb5">全国煤炭市场景气</h5>
+                <p> 全国煤炭市场景气指数为-44，比7月份终值（-45.7点）回升1.7个基点，显示煤炭市场运行态势出现了略微好转，但是仍然处于寒冷状态。 <b>动力煤。</b></p>
+                
+                <div id="realtimechart" style="width: 100%; height: 300px"></div>
+              </div><!-- col-md-6 -->
+              <div class="col-md-6 mb30">
+                <h5 class="subtitle mb5">全国煤炭市场景气2</h5>
+                <p class="mb15"> <b>规格品：</b>特指收到基低位发热量（NAR，Net AsReceived）为4200kcal/kg、4500kcal/kg、4800kcal/kg、5000kcal/kg、5200kcal/kg、5500kcal/kg六个规格品的动力煤品种。.</p>
+                <div id="basicflot2" style="width: 100%; height: 300px"></div>
+              </div><!-- col-md-6 -->
+            </div><!-- row -->
+            
+            <div class="row">
+              <div class="col-md-6 mb30">
+                <h5 class="subtitle mb5">全国煤炭市场景气3</h5>
+                <p class="mb15"><b>车板价：</b>指货物运到站台并装在火车上的价格，（包含了货物装车之前的所有费用）。 </p>
+                <div id="trackingchart" style="width: 100%; height: 300px"></div>
+              </div><!-- col-md-6 -->
+              <div class="col-md-6 mb30">
+                <h5 class="subtitle mb5">港口库存状况</h5>
+                <p class="mb15">铁矿石港口库存创年内新高，而期货市场周三价格出现小幅反弹。分析认为，在需求不济、供给增加的情况下，数据显示，截至10月25铁矿石市场难以热情高涨。</p>
+                <div id="basicflot" style="width: 100%; height: 300px"></div>
+              </div><!-- col-md-6 -->
+            </div><!-- row -->
+            
+            <div class="row">
+              <div class="col-md-6 mb30">
+                <h5 class="subtitle mb5">各个重要港口库存对比</h5>
+                <p class="mb15">全国30个主要港口进口矿港口库存总量为7611万吨，较上一周增加276万吨，创今年内铁矿石港口库存新高；与今年1月初的进口矿港口库存高点相对高点7474万吨相比，增加了137万吨。</p>
+                <div id="barchart" style="width: 100%; height: 300px"></div>
+              </div><!-- col-md-6 -->
+              <div class="col-md-6 mb30">
+                <h5 class="subtitle mb5">本月主要煤耗行业煤炭消费量4</h5>
+                <p class="mb15">全年，华南地区煤炭价格起伏不定。除了一月、四五月、九十月价格出现升幅，其余月份价格都出现下调的现象。.</p>
+                <div id="piechart" style="width: 100%; height: 300px"></div>
+              </div><!-- col-md-6 -->
+            </div><!-- row -->
+              
+        </div><!-- panel-body -->
+      </div><!-- panel -->
+      
+      <div class="panel panel-default panel-morris">
+        <div class="panel-heading">
+          <div class="panel-btns">
+            <a href="" class="panel-close">&times;</a>
+            <a href="" class="minimize">&minus;</a>
+          </div><!-- panel-btns -->
+          <h4 class="panel-title">全国分省市主要煤炭消费量 </h4>
+          <p><a href="#" target="_blank"></a>2015年03月, 全国主要耗煤行业耗煤5959.822万吨，同比：-80.913%,环比：-76.517%，其中，电力行业耗煤180万吨，同比：40%,环比：50%</p>
+        </div><!-- panel-heading -->
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-6 mb30">
+              <h5 class="subtitle">各个重要港口库存对比</h5>
+              <p>全国30个主要港口进口矿港口库存总量为7611万吨，较上一周增加276万吨，创今年内铁矿石港口库存新高；与今年1月初的进口矿港口库存高点相对高点7474万吨相比，增加了137万吨。</p>
+              <div id="line-chart" class="body-chart"></div>
+            </div>
+            
+            <div class="col-md-6 mb30">
+              <h5 class="subtitle">本月主要煤耗行业煤炭消费量</h5>
+              <p>全年，华南地区煤炭价格起伏不定。除了一月、四五月、九十月价格出现升幅，其余月份价格都出现下调的现象。</p>
+              <div id="area-chart" class="body-chart"></div>
+            </div>
+            
+          </div><!-- row -->
+          
+          <div class="row">
+            <div class="col-md-6 mb30">
+              <h5 class="subtitle">本月主要煤耗行业煤炭消费量</h5>
+              <p>全国30个主要港口进口矿港口库存总量为7611万吨，较上一周增加276万吨，创今年内铁矿石港口库存新高；与今年1月初的进口矿港口库存高点相对高点7474万吨相比，增加了137万吨。</p>
+              <div id="bar-chart" class="body-chart"></div>
+            </div>
+            
+            <div class="col-md-6 mb30">
+              <h5 class="subtitle">本月主要煤耗行业煤炭消费量</h5>
+              <p>全年，华南地区煤炭价格起伏不定。除了一月、四五月、九十月价格出现升幅，其余月份价格都出现下调的现象。</p>
+              <div id="stacked-chart" class="body-chart"></div>
+            </div>
+          </div><!-- row -->
+          
+          <div class="row">
+            <div class="col-md-6">
+              <h5 class="subtitle">行业分析</h5>
+              <p>本月主要煤耗行业煤炭消费量.</p>
+              <div id="donut-chart" class="body-chart"></div>
+            </div>
+            <div class="col-md-6">
+              <h5 class="subtitle">行业分析2</h5>
+              <p>本月主要煤耗行业煤炭消费量</p>
+              <div id="donut-chart2" class="body-chart"></div>
+            </div>
+          </div><!-- row -->
+          
+        </div><!-- panel-body -->
+      </div><!-- panel -->
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-btns">
+            <a href="" class="panel-close">&times;</a>
+            <a href="" class="minimize">&minus;</a>
+          </div><!-- panel-btns -->
+          <h4 class="panel-title panel-title-alt">总结 </h4>
+          <p><a href="#" target="_blank">本月主要煤耗行业煤炭消费量2</a> 全年，华南地区煤炭价格起伏不定。除了一月、四五月、九十月价格出现升幅，其余月份价格都出现下调的现象。 </p>
+        </div><!-- panel-heading -->
+        <div class="panel-body">
+          
+          <div class="tinystat mr20">
+            <div id="sparkline" class="chart mt5"></div>
+            <div class="datainfo">
+              <span class="text-muted">总输出量</span>
+              <h4>630,201</h4>
+            </div>
+          </div><!-- tinystat -->
+              
+          <div class="tinystat mr20">
+            <div id="sparkline2" class="chart mt5"></div>
+            <div class="datainfo">
+              <span class="text-muted">总外运量</span>
+              <h4>106,850</h4>
+            </div>
+          </div><!-- tinystat -->
+              
+          <div class="tinystat mr20">
+            <div id="sparkline3" class="chart mt5">1,5,3,6,8,2</div>
+            <div class="datainfo">
+              <span class="text-muted">总进口量</span>
+              <h4>23,001,090</h4>
+            </div>
+          </div><!-- tinystat -->
+          
+          <div class="tinystat">
+            <div id="sparkline4" class="chart mt5">1,5,3,6,8,2</div>
+            <div class="datainfo">
+              <span class="text-muted">其他行业用量</span>
+              <h4>11,090</h4>
+            </div>
+          </div>
+            <!-- tinystat -->
+              
+        </div><!-- panel-body -->
+      </div><!-- panel -->
+            
+    </div><!-- contentpanel -->
+
+  </div><!-- mainpanel -->
+
+  <div class="rightpanel">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a href="#rp-alluser" data-toggle="tab"><i class="fa fa-users"></i></a></li>
+        <li><a href="#rp-favorites" data-toggle="tab"><i class="fa fa-heart"></i></a></li>
+        <li><a href="#rp-history" data-toggle="tab"><i class="fa fa-clock-o"></i></a></li>
+        <li><a href="#rp-settings" data-toggle="tab"><i class="fa fa-gear"></i></a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="rp-alluser">
+            <h5 class="sidebartitle">在线的人</h5>
+            <ul class="chatuserlist">
+                <li class="online">
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/userprofile.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <strong>张三</strong>
+                            <small>洛杉矶, 华盛顿</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+                <li class="online">
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user1.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <span class="pull-right badge badge-danger">2</span>
+                            <strong>李四</strong>
+                            <small>洛杉矶, 华盛顿</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+                <li class="online">
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user2.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <strong>李四</strong>
+                            <small>洛杉矶, 华盛顿</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+                <li class="online">
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user3.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <strong>李四</strong>
+                            <small>洛杉矶, 华盛顿</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+                <li class="online">
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user4.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <strong>李四</strong>
+                            <small>洛杉矶, 华盛顿</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+            </ul>
+
+            <div class="mb30"></div>
+
+            <h5 class="sidebartitle">Offline Users</h5>
+            <ul class="chatuserlist">
+                <li>
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user5.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <strong>Eileen Sideways</strong>
+                            <small>Los Angeles, CA</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+                <li>
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user2.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <strong>李四</strong>
+                            <small>洛杉矶, 华盛顿</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+                <li>
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user3.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <strong>Nusja Nawancali</strong>
+                            <small>Bangkok, Thailand</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+                <li>
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user4.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <strong>李四</strong>
+                            <small>洛杉矶, 华盛顿</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+                <li>
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user5.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <strong>李四</strong>
+                            <small>洛杉矶, 华盛顿</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+                <li>
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user4.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <strong>李四</strong>
+                            <small>洛杉矶, 华盛顿</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+                <li>
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user5.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <strong>李四</strong>
+                            <small>洛杉矶, 华盛顿</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+            </ul>
+        </div>
+        <div class="tab-pane" id="rp-favorites">
+            <h5 class="sidebartitle">喜欢的</h5>
+            <ul class="chatuserlist">
+                <li class="online">
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user2.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                           <strong>李四</strong>
+                            <small>洛杉矶, 华盛顿</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+                <li>
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user1.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <strong>李四</strong>
+                            <small>洛杉矶, 华盛顿</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+                <li>
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user3.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <strong>李四</strong>
+                            <small>洛杉矶, 华盛顿</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+                <li class="online">
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user4.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                          <strong>李四</strong>
+                            <small>洛杉矶, 华盛顿</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+                <li class="online">
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user5.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                           <strong>李四</strong>
+                            <small>洛杉矶, 华盛顿</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+            </ul>
+        </div>
+        <div class="tab-pane" id="rp-history">
+            <h5 class="sidebartitle">历史</h5>
+            <ul class="chatuserlist">
+                <li class="online">
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user4.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <strong>王五</strong>
+                            <small>你好，咱们今天下午见面可以吗？在花园~！.</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+                <li>
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user2.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <strong>王五</strong>
+                            <small>你好，咱们今天下午见面可以吗？在花园~！.</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+                <li>
+                    <div class="media">
+                        <a href="#" class="pull-left media-thumb">
+                            <img alt="" src="images/photos/user3.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <strong>王五</strong>
+                            <small>你好，咱们今天下午见面可以吗？在花园~！.</small>
+                        </div>
+                    </div><!-- media -->
+                </li>
+            </ul>
+        </div>
+        <div class="tab-pane pane-settings" id="rp-settings">
+
+            <h5 class="sidebartitle mb20">设置</h5>
+            <div class="form-group">
+                <label class="col-xs-8 control-label">现在不现在的</label>
+                <div class="col-xs-4 control-label">
+                    <div class="toggle toggle-success"></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-8 control-label">允许历史</label>
+                <div class="col-xs-4 control-label">
+                    <div class="toggle toggle-success"></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-8 control-label">现在所有名字</label>
+                <div class="col-xs-4 control-label">
+                    <div class="toggle-chat1 toggle-success"></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-8 control-label">显示所在地</label>
+                <div class="col-xs-4 control-label">
+                    <div class="toggle toggle-success"></div>
+                </div>
+            </div>
+
+        </div><!-- tab-pane -->
+
+    </div><!-- tab-content -->
+  </div><!-- rightpanel -->
+</section>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<!--jquery ui-->
+<script src="js/jquery-ui-1.10.3.min.js"></script>
+<!--强大的框架-->
+<script src="js/bootstrap.min.js"></script>
+<!--Modernizr：专为HTML5和CSS3开发的功能检测类库-->
+<script src="js/modernizr.min.js"></script>
+<!--绘制波谱图标的插件-->
+<script src="js/jquery.sparkline.min.js"></script>
+<!--消失动画的控件，可以有各种的选项-->
+<script src="js/toggles.min.js"></script>
+<!--用于支持视网膜设备-->
+<script src="js/retina.min.js"></script>
+<!--Cookie能为用户提供很多的使得，例如购物网站存储用户曾经浏览过的产品列表，或者门户网站记住用户喜欢选择浏览哪类新闻。 在用户允许的情况下，还可以存储用户的登录信息，使得用户在访问网站时不必每次都键入这些信息-->
+<script src="js/jquery.cookies.js"></script>
+<!--JQuery图表插件之Flot-->
+<script src="js/flot/jquery.flot.min.js"></script>
+<script src="js/flot/jquery.flot.resize.min.js"></script>
+
+<!--Morris.js 是一个轻量级的 JS 库，使用 jQuery 和 Raphaël 来生成各种时序图-->
+<script src="js/morris.min.js"></script>
+<!--下方JS用于在网页中绘制矢量图形的 Javascript 库-->
+<script src="js/raphael-2.1.0.min.js"></script>
+<!--下方JS优化多选框-->
+<script src="js/chosen.jquery.min.js"></script>
+<!--echart的控件-->
+<!-- ECharts单文件引入 -->
+
+
+<!--JQuery图表插件之Flot 图表比首页多引入两个-->
+<script src="js/flot/jquery.flot.symbol.min.js"></script>
+<script src="js/flot/jquery.flot.crosshair.min.js"></script>
+<script src="js/flot/jquery.flot.categories.min.js"></script>
+<script src="js/flot/jquery.flot.pie.min.js"></script>
+
+<script src="js/custom.js"></script>
+<script src="js/charts.js"></script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+
+.ver-inline-menu li i {
+   width: 37px;
+  height: 37px;
+  display: inline-block;
+  color:#8e8e8e;
+  font-size:15px;
+  padding:10px 10px 10px 10px;
+  margin:0px 5px 0 5px;
+  text-align: center;
+  background:#f5f5f5 !important;
+}
+
+.ver-inline-menu li a {
+   font-size: 16px;
+  color:#000;
+  display:block;
+  background:#f5f5f5;
+  border-left:solid 0px #c4d5df;
+}
+
+.ver-inline-menu li:hover a,
+.ver-inline-menu li:hover i {
+  background:#e9ebef;
+  text-decoration:none;
+}
+
+.ver-inline-menu li:hover i {
+  color:#ef4527;
+  background:#e9ebef !important;
+}
+
+.ver-inline-menu li.active a,
+.ver-inline-menu li:hover a {
+  font-size: 16px;
+}
+.portlet.solid.gnst>.portlet-title,.portlet.solid.gnst>.portlet-title>.caption>i,.portlet.solid.gnst>.portlet-body, /**yinhui  银灰色*/ .portlet.solid.yinhui>.portlet-title,.portlet.solid.yinhui>.portlet-title>.caption>i,.portlet.solid.yinhui>.portlet-body,
+	/**zhuanhong  砖红色*/ .portlet.solid.zhuanhong>.portlet-title,.portlet.solid.zhuanhong>.portlet-title>.caption>i,.portlet.solid.zhuanhong>.portlet-body,
+	/***light-purple 浅紫色***/ .portlet.solid.light-purple>.portlet-title,.portlet.solid.light-purple>.portlet-title>.caption>i,.portlet.solid.light-purple>.portlet-body,
+	/***goldenrod 金菊黄  **/ .portlet.solid.goldenrod>.portlet-title,.portlet.solid.goldenrod>.portlet-title>.caption>i,.portlet.solid.goldenrod>.portlet-body,.portlet.solid.orange>.portlet-title,.portlet.solid.orange>.portlet-title>.caption>i,.portlet.solid.orange>.portlet-body,.portlet.solid.dark-orange>.portlet-title,.portlet.solid.dark-orange>.portlet-title>.caption>i,.portlet.solid.dark-orange>.portlet-body,.portlet.solid.golden>.portlet-title,.portlet.solid.golden>.portlet-title>.caption>i,.portlet.solid.golden>.portlet-body,.portlet.solid.light-green>.portlet-title,.portlet.solid.light-green>.portlet-title>.caption>i,.portlet.solid.light-green>.portlet-body,.portlet.solid.dark-green>.portlet-title,.portlet.solid.dark-green>.portlet-title>.caption>i,.portlet.solid.dark-green>.portlet-body,.portlet.solid.deepblue>.portlet-title,.portlet.solid.deepblue>.portlet-title>.caption>i,.portlet.solid.deepblue>.portlet-body,.portlet.solid.brown>.portlet-title,.portlet.solid.brown>.portlet-title>.caption>i,.portlet.solid.brown>.portlet-body,.portlet.box.gnst>.portlet-title
+	{
+	background-color: #1caf9a;
+}
+
+li a:hover,
+        li a:focus {
+            color: #1caf9a;
+            cursor: pointer;
+        }
+        
+        .paging_bootstrap ul li a:hover {
+            color: #ffffff;
+        }
+        /* .next :hover{ */
+        /* 	background-color:#eeeeee; */
+        /* } */
+        
+        .pagination>li>a:hover {
+            background-color: #444444;
+        }
+        /* .prev :hover{ */
+        /* 	background-color:#eeeeee; */
+        /* } */
+        
+        .paging_bootstrap ul li a {
+            color: #ffffff;
+        }
+        
+        .btn-default {
+            border-width: 0px;
+        }
+        
+        .btn-default {
+            background-position: bottom;
+            background-repeat: repeat-x;
+        }
+        
+        .btn-default:hover,
+        .btn-default:focus,
+        .btn-default:active,
+        .btn-default.active,
+        .open .dropdown-toggle.btn-default {
+            color: #1caf9a;
+            background-color: #ffffff;
+        }
+        
+        .ver-inline-menu .innerLi:hover a {
+            background-color: #ffffff;
+        }
+        
+        tbody tr td a {
+            color: red;
+        }
+        
+        .dropdown-submenu>.dropdown-menu {
+            width: 280px;
+        }

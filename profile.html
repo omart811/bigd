@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+    <title>全国煤炭交易数据分析平台</title>
+
+    <link href="css/style.default.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status"><i class="fa fa-spinner fa-spin"></i>
+        </div>
+    </div>
+
+    <section>
+        <div class="leftpanel">
+            <div class="logopanel">
+                <h1><span>[</span>全国煤炭交易数据分析平台<span>]</span></h1>
+            </div>
+            <!-- logopanel -->
+
+            <div class="leftpanelinner">
+                <!-- This is only visible to small devices -->
+                <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                    <div class="media userlogged">
+                        <img alt="" src="images/photos/loggeduser.png" class="media-object">
+                        <div class="media-body">
+                            <h4>是个名字</h4>
+                            <span>"这个只有在小型设备上可见"</span>
+                        </div>
+                    </div>
+
+                    <h5 class="sidebartitle actitle">账户</h5>
+                    <ul class="nav nav-pills nav-stacked nav-bracket mb30">
+                        <li><a href="profile.html"><i class="fa fa-user"></i> <span>介绍</span></a>
+                        </li>
+                        <li><a href=""><i class="fa fa-cog"></i> <span>账户设置</span></a>
+                        </li>
+                        <li><a href=""><i class="fa fa-question-circle"></i> <span>帮助</span></a>
+                        </li>
+                        <li><a href="signout.html"><i class="fa fa-sign-out"></i> <span>退出</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <h5 class="sidebartitle">导航栏</h5>
+             <!--导航栏的内容-->
+                <ul class="nav nav-pills nav-stacked nav-bracket">
+                    <li><a href="index2.html"><i class="fa fa-home"></i><span>控制台</span></a>
+                    </li><li class="nav-parent"><a href=""><span class="pull-right badge badge-success">4</span><i class="fa fa-envelope-o"></i> <span>煤炭GIS</span></a>
+                        <ul class="children">
+                            <li><a href="gis-out.html"><i class="fa fa-caret-right"></i>煤炭运销</a></li>
+                            <li><a href="gis-position.html"><i class="fa fa-caret-right"></i>煤企分布</a></li>
+                            <li><a href="gis-port.html"><i class="fa fa-caret-right"></i>港口动态</a></li> 
+                            <li><a href="gis-need.html"><i class="fa fa-caret-right"></i>需求企业</a></li>                                                                          <li><a href="gis-lushu-cs.html"><i class="fa fa-caret-right"></i>货运追踪</a></li>
+                            <li><a href="gis-tielu.html"><i class="fa fa-caret-right"></i>铁路运输</a></li>
+                            <li><a href="gis-lushu-cs.html"><span class="pull-right badge badge-danger">开发中</span><i class="fa fa-caret-right"></i>船运追踪</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-parent"><a href=""><i class="fa fa-edit"></i> <span>图解煤炭</span></a>
+                        <ul class="children">
+                            <li><a href="gis-kucun.html"><i class="fa fa-caret-right"></i>煤炭产运需</a></li>
+                            <li><a href="gis-jinc.html"><i class="fa fa-caret-right"></i>煤炭进出口</a></li>
+                        </ul>
+                    </li>
+                     <li><a href="price.html"><i class="fa fa-th-list"></i> <span>价格中心</span></a>
+                    <li class="nav-parent"><a href=""><i class="fa fa-suitcase"></i><span>预警预测</span></a>
+                        <ul class="children">
+                            <li><a href="yuce.html"><i class="fa fa-caret-right"></i>景气监测</a></li>
+                            <li><a href="yuce2.html"><i class="fa fa-caret-right"></i>环比监测</a></li>
+                            <li><a href="yuce3.html"><i class="fa fa-caret-right"></i>同比监测</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-parent"><a href=""><i class="fa fa-file-text"></i><span>煤炭资讯</span></a>
+                        <ul class="children">                
+                            <li><a href="list.html"><i class="fa fa-caret-right"></i>独家观点</a></li>
+                            <li><a href="list1.html"><i class="fa fa-caret-right"></i>新闻动态</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gongyl.html"><i class="fa fa-th-list"></i><span>煤炭供应链查询</span></a></li>
+                    <li><a href="data-center.html"><i class="fa fa-th-list"></i><span>数据中心</span></a></li>
+                    <li class="nav-parent active"><a href=""><i class="fa fa-bug"></i> <span>个人中心</span></a>
+                        <ul class="children" style="display:block">
+                            <li  class=" active"><a href="profile.html"><i class="fa fa-caret-right"></i>个人主页</a></li>
+                            <li><a href="expert-directory.html"><i class="fa fa-caret-right"></i>行业专家</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <!--导航栏的内容结束-->
+                <div class="infosummary">
+                    <h5 class="sidebartitle">主要煤炭数据展示</h5>
+                    <ul>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">环渤海动力煤指数</span>
+                                <h4>414元/吨 +0.34%</h4>
+                            </div>
+                            <div id="sidebar-chart" class="chart"></div>
+                        </li>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">动力煤期货价格</span>
+                                <h4>TC 1509 422+1.5%</h4>
+                            </div>
+                            <div id="sidebar-chart2" class="chart"></div>
+                        </li>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">海运煤炭运价综合指数</span>
+                                <h4>45.63+7.55%</h4>
+                            </div>
+                            <div id="sidebar-chart3" class="chart"></div>
+                        </li>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">进口煤炭数量</span>
+                                <h4>2200万吨</h4>
+                            </div>
+                            <div id="sidebar-chart4" class="chart"></div>
+                        </li>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">港口库存总量</span>
+                                <h4>3300万吨</h4>
+                            </div>
+                            <div id="sidebar-chart5" class="chart"></div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- infosummary -->
+            </div>
+            <!-- leftpanelinner -->
+        </div>
+        <!-- leftpanel -->
+
+        <div class="mainpanel">
+            <div class="headerbar">
+                <a class="menutoggle"><i class="fa fa-bars"></i></a>
+
+                <form class="searchform" action="index.html" method="post">
+                    <input type="text" class="form-control" name="keyword" placeholder="搜索你想要的..." />
+                </form>
+
+                <div class="header-right">
+                    <ul class="headermenu">
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn btn-default dropdown-toggle tp-icon" data-toggle="dropdown">
+                                    <i class="glyphicon glyphicon-user"></i>
+                                    <span class="badge">2</span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-head pull-right">
+                                    <h5 class="title">2 个新注册的用户</h5>
+                                    <ul class="dropdown-list user-list">
+                                        <li class="new">
+                                            <div class="thumb">
+                                                <a href="">
+                                                    <img src="images/photos/user1.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h5><a href="">张三(@draniem)</a> <span class="badge badge-success">new</span></h5>
+                                            </div>
+                                        </li>
+                                        <li class="new">
+                                            <div class="thumb">
+                                                <a href="">
+                                                    <img src="images/photos/user2.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h5><a href="">李四 (@zaham)</a> <span class="badge badge-success">new</span></h5>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb">
+                                                <a href="">
+                                                    <img src="images/photos/user3.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h5><a href="">王五(@wenocar)</a></h5>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb">
+                                                <a href="">
+                                                    <img src="images/photos/user4.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h5><a href="">赵六 (@nusja)</a></h5>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb">
+                                                <a href="">
+                                                    <img src="images/photos/user5.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h5><a href="">田七 (@lane_kitmare)</a></h5>
+                                            </div>
+                                        </li>
+                                        <li class="new"><a href="">查看所有注册用户</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn btn-default dropdown-toggle tp-icon" data-toggle="dropdown">
+                                    <i class="glyphicon glyphicon-envelope"></i>
+                                    <span class="badge">1</span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-head pull-right">
+                                    <h5 class="title">你有 1 条新的信息</h5>
+                                    <ul class="dropdown-list gen-list">
+                                        <li class="new">
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user1.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">张三 <span class="badge badge-success">new</span></span>
+                                                <span class="msg">注册时候的信息..</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user2.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">李四</span>
+                                                <span class="msg">注册相关信息..</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user3.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">王五</span>
+                                                <span class="msg">重点的注册信息..</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user4.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">赵六</span>
+                                                <span class="msg">注册时候的信息..</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user5.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">田七</span>
+                                                <span class="msg">注册的重点信息.</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new"><a href="">阅读所有的.</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn btn-default dropdown-toggle tp-icon" data-toggle="dropdown">
+                                    <i class="glyphicon glyphicon-globe"></i>
+                                    <span class="badge">5</span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-head pull-right">
+                                    <h5 class="title">你有 5 条提示</h5>
+                                    <ul class="dropdown-list gen-list">
+                                        <li class="new">
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user4.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">张三 <span class="badge badge-success">new</span></span>
+                                                <span class="msg">现在关注你</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new">
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user5.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">李四 <span class="badge badge-success">new</span></span>
+                                                <span class="msg">现在关注你</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new">
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user3.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">王五 <span class="badge badge-success">new</span></span>
+                                                <span class="msg">likes your recent status</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new">
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user3.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">赵六<span class="badge badge-success">new</span></span>
+                                                <span class="msg">下载你的工作报表</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new">
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user3.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">田七<span class="badge badge-success">new</span></span>
+                                                <span class="msg">看了你2条信息</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new"><a href="">查看所有的动态</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    <img src="images/photos/loggeduser.png" alt="" />李大国
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                                    <li><a href="profile.html"><i class="glyphicon glyphicon-user"></i>我的信息</a>
+                                    </li>
+                                    <li><a href="#"><i class="glyphicon glyphicon-cog"></i> 登录设置</a>
+                                    </li>
+                                    <li><a href="#"><i class="glyphicon glyphicon-question-sign"></i> 帮助</a>
+                                    </li>
+                                    <li><a href="signin.html"><i class="glyphicon glyphicon-log-out"></i> 登出</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <button id="chatview" class="btn btn-default tp-icon chat-icon">
+                                <i class="glyphicon glyphicon-comment"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- header-right -->
+
+            </div>
+            <!-- headerbar -->
+
+            <div class="pageheader">
+                <h2><i class="fa fa-home"></i>煤炭专家<span>我们致力用最专业的服务助力企业实力提升..</span></h2>
+                <div class="breadcrumb-wrapper">
+                    <span class="label">你现在在这里:</span>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">个人中心</a>
+                        </li>
+                        <li class="active">煤炭专家</li>
+                    </ol>
+                </div>
+            </div>
+
+          <div class="contentpanel">
+      
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="images/photos/profile-1.png" class="thumbnail img-responsive" alt="" />
+          
+          <div class="mb30"></div>
+          
+          <h5 class="subtitle">简介</h5>
+          <p class="mb30">赵文亮，男，汉族，1965年11月出生，籍贯伊金霍洛旗，大学学历，工商管理硕士，1987年8月参加工作，1990年12月加入中国共产党。现任鄂尔多斯市人民政府党组成员、副市长，市经济和信息化委员会党组书记、主任。<br/>
+<a href="">查看更多</a></p>
+          
+          <h5 class="subtitle">联系他</h5>
+          <ul class="profile-social-list">
+            <li><i class="fa fa-twitter"></i> <a href="">www.qq.com</a></li>
+            <li><i class="fa fa-facebook"></i> <a href="">www.imcoal.com</a></li>
+            <li><i class="fa fa-youtube"></i> <a href="">www.imcec.cn</a></li>
+            
+          </ul>
+          
+          <div class="mb30"></div>
+          
+          <h5 class="subtitle">地址</h5>
+          <address>
+            西城区月坛南街38号
+   <br>
+            中国，北京市<br>
+            <abbr title="Phone">邮  编：</abbr>0123456789
+          </address>
+          
+        </div><!-- col-sm-3 -->
+        <div class="col-sm-9">
+          
+          <div class="profile-header">
+            <h2 class="profile-name">赵可亮</h2>
+            <div class="profile-location"><i class="fa fa-map-marker"></i> 中国，浙江, 温州</div>
+            <div class="profile-position"><i class="fa fa-briefcase"></i> 新疆维吾尔自治区党委副书记、政府主席 <a href="">中国能源</a></div>
+            
+            <div class="mb20"></div>
+            
+            <button class="btn btn-success mr5"><i class="fa fa-user"></i> 关注</button>
+            <button class="btn btn-white"><i class="fa fa-envelope-o"></i> 私信</button>
+          </div><!-- profile-header -->
+          
+          <!-- Nav tabs -->
+        <ul class="nav nav-tabs nav-justified nav-profile">
+          <li class="active"><a href="#activities" data-toggle="tab"><strong>最新动态</strong></a></li>
+          <li><a href="#followers" data-toggle="tab"><strong>要关注</strong></a></li>
+          <li><a href="#following" data-toggle="tab"><strong>周边动态</strong></a></li>
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="activities">
+            <div class="activity-list">
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/user1.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <b>张三丰</b> 关注了 <b>赵可亮</b>. <br />
+                  <small class="text-muted">昨天 at 3:30pm</small>
+                </div>
+              </div><!-- media -->
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/userprofile.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <b>赵可亮</b> 发布新的博客. <br />
+                  <small class="text-muted">今天 at 3:18pm</small>
+                      
+                  <div class="media blog-media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" src="images/photos/media5.png" alt="" />
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-title"><a href="">国内动力煤价格或将迎来“阶段性”反弹</a></h4>
+                      <p> 综合分析国内动力煤市场运行环境及其影响因素认为，尽管在经济下行压力仍未缓解、今年经济增长预期放缓、煤炭产能过剩的背景下，国内动力煤需求和价格不具备走出低谷的基础，从而将迫使国内动力煤价格长时期在低位运行，但是短期看，不排除国内动力煤价格在今年二季度后期迎来“阶段性”反弹的可能 <a href="">查看详情</a></p>
+                    </div>
+                  </div><!-- media -->
+                  
+                </div>
+              </div><!-- media -->
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/user2.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <b>李娜</b> 关注了 <b>赵可亮</b>. <br />
+                  <small class="text-muted">两天前 at 8:30am</small>
+                </div>
+              </div><!-- media -->
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/userprofile.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <b>赵可亮</b> 上传了 <a href="">5 张照片</a>. <br />
+                  <small class="text-muted">五天前 at 12:30pm</small>
+                  
+                  <ul class="uploadphoto-list">
+                    <li><a href="images/photos/media1.jpg" data-rel="prettyPhoto"><img src="images/photos/media1.jpg" class="img-responsive" alt="" /></a></li>
+                    <li><a href="images/photos/media2.png" data-rel="prettyPhoto"><img src="images/photos/media2.png" class="img-responsive" alt="" /></a></li>
+                    <li><a href="images/photos/media3.png" data-rel="prettyPhoto"><img src="images/photos/media3.png" class="img-responsive" alt="" /></a></li>
+                  </ul>
+                </div>
+              </div><!-- media -->
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/user4.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <b>马克思</b> 关注了 <b>赵可亮</b>. <br />
+                  <small class="text-muted">六天前 at 8:15am</small>
+                </div>
+              </div><!-- media -->
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/userprofile.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <b>赵可亮</b> 上传一篇新日志 <br />
+                  <small class="text-muted">六天前 at 6:18am</small>
+                  <h4 class="media-title"><a href="">简析1-9月份水电生产对动力煤市场的影响</a></h4>
+                  <p>毫无疑问，2012年以来宏观经济增速放缓背景下，水电产量持续了近三年的快速增加状况，是国内动力煤供求持续低迷、价格一蹶不振的主要原因之一。而且2014年以来，上述状况表现的更加淋漓尽致，水电产量从三月份开始的持续、大幅增加局面 <a href="">查看详情</a></p>
+                </div>
+              </div><!-- media -->
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/userprofile.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <strong>赵可亮</strong> 上传一片新日志 <br />
+                  <small class="text-muted">九月二十五日 at 3:18pm</small>
+                      
+                  <div class="media blog-media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" src="images/photos/media4.png" alt="" />
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-title"><a href="">沿海地区煤价将进入上行通道</a></h4>
+                      <p>综合各方面消息认为，随着包括煤炭减产、限制进口、大秦线检修等供应侧收缩效应的逐渐显现，在冬季煤炭消费高峰来临之际，沿海地区动力煤市场的供求关系将缓慢向“卖方市场”倾斜，动力煤交易价格将于10月下旬进入上涨通道 <a href="">查看详情</a></p>
+                    </div>
+                  </div><!-- media -->
+                </div>
+              </div><!-- media -->
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/userprofile.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <strong>赵可亮</strong> 添加一张新照片. <br />
+                  <small class="text-muted">九月二十四日 at 1:30pm</small>
+                  <div class="mb20"></div>
+                  <a href="images/photos/media6.png" data-rel="prettyPhoto" class="img-single"><img src="images/photos/media6.png" class="img-responsive" alt="" /></a>
+                </div>
+              </div><!-- media -->
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/user5.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <strong>李新兵</strong>关注了 <strong>赵可亮</strong>. <br />
+                  <small class="text-muted">九月十五日 at 3:30pm</small>
+                </div>
+              </div><!-- media -->
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/userprofile.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <strong>赵可亮</strong> 上传一片新日志 <br />
+                  <small class="text-muted">九月十一日 at 3:18pm</small>
+                      
+                  <div class="media blog-media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" src="images/photos/media7.png" alt="" />
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-title"><a href="">近期环渤海地区动力煤价格上涨动力不足</a></h4>
+                      <p>  9月3日，秦皇岛海运煤炭交易市场发布的环渤海动力煤价格指数（环渤海地区发热量5500大卡动力煤的综合平均价格；以下简称：价格指数；英文缩写：BSPI）报收于482元/吨，比前一期回升了4元/吨，这也是该指数在经历此前连续十三周下降之后的首次回升，表明该地区动力煤的供求关系已经得到改善。. <a href="">阅读详情</a></p>
+                    </div>
+                  </div><!-- media -->
+                  
+                </div>
+              </div><!-- media -->
+              
+            </div><!-- activity-list -->
+            
+            <button class="btn btn-white btn-block">加载更多</button>
+
+          </div>
+          <div class="tab-pane" id="followers">
+            
+            <div class="follower-list">
+              
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object" src="images/photos/profilepic2.png" alt="" />
+                </a>
+                <div class="media-body">
+                  <h3 class="follower-name">李爱国</h3>
+                  <div class="profile-location"><i class="fa fa-map-marker"></i> 江苏, 徐州, 中国</div>
+                  <div class="profile-position"><i class="fa fa-briefcase"></i> 徐工集团 <a href="">有限责任公司</a></div>
+                  
+                  <div class="mb20"></div>
+                  
+                  <button class="btn btn-sm btn-success mr5"><i class="fa fa-user"></i> 关注</button>
+                  <button class="btn btn-sm btn-white"><i class="fa fa-envelope-o"></i> 私信</button>
+                </div>
+              </div><!-- media -->
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object" src="images/photos/profilepic2.png" alt="" />
+                </a>
+                <div class="media-body">
+                  <h3 class="follower-name">李爱国</h3>
+                  <div class="profile-location"><i class="fa fa-map-marker"></i> 江苏, 徐州, 中国</div>
+                  <div class="profile-position"><i class="fa fa-briefcase"></i> 徐工集团 <a href="">有限责任公司</a></div>
+                  
+                  <div class="mb20"></div>
+                  
+                  <button class="btn btn-sm btn-success mr5"><i class="fa fa-user"></i> 关注</button>
+                  <button class="btn btn-sm btn-white"><i class="fa fa-envelope-o"></i> 私信</button>
+                </div>
+              </div><!-- media -->
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object" src="images/photos/profilepic2.png" alt="" />
+                </a>
+                <div class="media-body">
+                  <h3 class="follower-name">李爱国</h3>
+                  <div class="profile-location"><i class="fa fa-map-marker"></i> 江苏, 徐州, 中国</div>
+                  <div class="profile-position"><i class="fa fa-briefcase"></i> 徐工集团 <a href="">有限责任公司</a></div>
+                  
+                  <div class="mb20"></div>
+                  
+                  <button class="btn btn-sm btn-success mr5"><i class="fa fa-user"></i> 关注</button>
+                  <button class="btn btn-sm btn-white"><i class="fa fa-envelope-o"></i> 私信</button>
+                </div>
+              </div><!-- media -->
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object" src="images/photos/profilepic2.png" alt="" />
+                </a>
+                <div class="media-body">
+                  <h3 class="follower-name">李爱国</h3>
+                  <div class="profile-location"><i class="fa fa-map-marker"></i> 江苏, 徐州, 中国</div>
+                  <div class="profile-position"><i class="fa fa-briefcase"></i> 徐工集团 <a href="">有限责任公司</a></div>
+                  
+                  <div class="mb20"></div>
+                  
+                  <button class="btn btn-sm btn-success mr5"><i class="fa fa-user"></i> 关注</button>
+                  <button class="btn btn-sm btn-white"><i class="fa fa-envelope-o"></i> 私信</button>
+                </div>
+              </div><!-- media -->
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object" src="images/photos/profilepic2.png" alt="" />
+                </a>
+                <div class="media-body">
+                  <h3 class="follower-name">李爱国</h3>
+                  <div class="profile-location"><i class="fa fa-map-marker"></i> 江苏, 徐州, 中国</div>
+                  <div class="profile-position"><i class="fa fa-briefcase"></i> 徐工集团 <a href="">有限责任公司</a></div>
+                  
+                  <div class="mb20"></div>
+                  
+                  <button class="btn btn-sm btn-success mr5"><i class="fa fa-user"></i> 关注</button>
+                  <button class="btn btn-sm btn-white"><i class="fa fa-envelope-o"></i> 私信</button>
+                </div>
+              </div><!-- media -->
+              <button class="btn btn-white btn-block">加载更多</button>
+              
+              
+              
+              
+            </div><!--follower-list -->
+            
+          </div>
+          <div class="tab-pane" id="following">
+            
+            <div class="activity-list">
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/user2.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <strong>李大钊</strong> 关注了图片<br />
+                  <small class="text-muted">今天 at 12:30pm</small>
+                  
+                  <ul class="uploadphoto-list">
+                    <li><a href="images/photos/media5.png" data-rel="prettyPhoto"><img src="images/photos/media5.png" class="img-responsive" alt="" /></a></li>
+                    <li><a href="images/photos/media4.png" data-rel="prettyPhoto"><img src="images/photos/media4.png" class="img-responsive" alt="" /></a></li>
+                  </ul>
+                </div>
+              </div><!-- media -->
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/user1.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <b>李磊</b> 关注了 <b>程辉</b>. <br />
+                  <small class="text-muted">昨天 at 1:30pm</small>
+                </div>
+              </div><!-- media -->
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/user4.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <strong>海耶</strong> 关注了 <strong>乾光</strong>. <br />
+                  <small class="text-muted">三天前 at 1:30pm</small>
+                </div>
+              </div><!-- media -->
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/user2.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <strong>李江</strong> 关注了图片<br />
+                  <small class="text-muted">五天前 at 12:30pm</small>
+                  
+                  <ul class="uploadphoto-list">
+                    <li><a href="images/photos/media6.png" data-rel="prettyPhoto"><img src="images/photos/media6.png" class="img-responsive" alt="" /></a></li>
+                    <li><a href="images/photos/media7.png" data-rel="prettyPhoto"><img src="images/photos/media7.png" class="img-responsive" alt="" /></a></li>
+                    <li><a href="images/photos/media2.png" data-rel="prettyPhoto"><img src="images/photos/media2.png" class="img-responsive" alt="" /></a></li>
+                  </ul>
+                </div>
+              </div><!-- media -->
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/user1.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <b>买买提</b> 关注了 <b>席尔瓦</b>. <br />
+                  <small class="text-muted">九月二十五日 at 1:30pm</small>
+                </div>
+              </div><!-- media -->
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/user4.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <b>兰科</b> 关注了<b>李爱华</b>. <br />
+                  <small class="text-muted">九月二十四日 at 1:30pm</small>
+                </div>
+              </div><!-- media -->
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/user3.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <strong>新大地</strong> 上传一片新日志 <br />
+                  <small class="text-muted">九月二十三日 at 3:18pm</small>
+                      
+                  <div class="media blog-media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" src="images/photos/media3.png" alt="" />
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-title"><a href="">政策不断加码 煤价回升可期</a></h4>
+                      <p> 今年8月初，本人发表了《近期国内煤炭市场新闻及热点透视》（以下简称：《透视》）一文，核心观点是：随着各级政府和煤炭企业的共同努力，今年四季度国内动力煤市场形势将出现好转，煤炭价格将出现理性回归。</a></p>
+                    </div>
+                  </div><!-- media -->
+                  
+                </div>
+              </div><!-- media -->
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/user4.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <strong>小田磊</strong>关注了 <strong>李大国</strong>. <br />
+                  <small class="text-muted">九月二十三 at 1:30pm</small>
+                </div>
+              </div><!-- media -->
+              
+              <div class="media act-media">
+                <a class="pull-left" href="#">
+                  <img class="media-object act-thumb" src="images/photos/user4.png" alt="" />
+                </a>
+                <div class="media-body act-media-body">
+                  <strong>李大磊</strong> 关注了 <strong>王国</strong>. <br />
+                  <small class="text-muted">九月二十日 at 4:30pm</small>
+                </div>
+              </div><!-- media -->
+              
+            </div><!-- activity-list -->
+            
+            <button class="btn btn-white btn-block">加载更多</button>
+            
+          </div>
+         
+        </div><!-- tab-content -->
+          
+        </div><!-- col-sm-9 -->
+      </div><!-- row -->
+      
+    </div><!-- contentpanel -->
+
+        </div>
+        <!--mainpanel -->
+
+
+
+        <div class="rightpanel">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#rp-alluser" data-toggle="tab"><i class="fa fa-users"></i></a>
+                </li>
+                <li><a href="#rp-favorites" data-toggle="tab"><i class="fa fa-heart"></i></a>
+                </li>
+                <li><a href="#rp-history" data-toggle="tab"><i class="fa fa-clock-o"></i></a>
+                </li>
+                <li><a href="#rp-settings" data-toggle="tab"><i class="fa fa-gear"></i></a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="rp-alluser">
+                    <h5 class="sidebartitle">在线的人</h5>
+                    <ul class="chatuserlist">
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/userprofile.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>张三</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user1.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <span class="pull-right badge badge-danger">2</span>
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user2.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user3.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user4.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                    </ul>
+
+                    <div class="mb30"></div>
+
+                    <h5 class="sidebartitle">Offline Users</h5>
+                    <ul class="chatuserlist">
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user5.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>赵可亮</strong>
+                                    <small>Los Angeles, CA</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user2.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user3.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>新西兰</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user4.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user5.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user4.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user5.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="rp-favorites">
+                    <h5 class="sidebartitle">喜欢的</h5>
+                    <ul class="chatuserlist">
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user2.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user1.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user3.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user4.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user5.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="rp-history">
+                    <h5 class="sidebartitle">历史</h5>
+                    <ul class="chatuserlist">
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user4.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>王五</strong>
+                                    <small>你好，咱们今天下午见面可以吗？在花园~！.</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user2.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>王五</strong>
+                                    <small>你好，咱们今天下午见面可以吗？在花园~！.</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user3.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>王五</strong>
+                                    <small>你好，咱们今天下午见面可以吗？在花园~！.</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane pane-settings" id="rp-settings">
+
+                    <h5 class="sidebartitle mb20">设置</h5>
+                    <div class="form-group">
+                        <label class="col-xs-8 control-label">现在不现在的</label>
+                        <div class="col-xs-4 control-label">
+                            <div class="toggle toggle-success"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-xs-8 control-label">允许历史</label>
+                        <div class="col-xs-4 control-label">
+                            <div class="toggle toggle-success"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-xs-8 control-label">现在所有名字</label>
+                        <div class="col-xs-4 control-label">
+                            <div class="toggle-chat1 toggle-success"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-xs-8 control-label">显示所在地</label>
+                        <div class="col-xs-4 control-label">
+                            <div class="toggle toggle-success"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- tab-pane -->
+
+            </div>
+            <!-- tab-content -->
+        </div>
+        <!-- rightpanel -->
+    </section>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <!--jquery ui-->
+    <script src="js/jquery-ui-1.10.3.min.js"></script>
+    <!--强大的框架-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--Modernizr：专为HTML5和CSS3开发的功能检测类库-->
+    <script src="js/modernizr.min.js"></script>
+    <!--绘制波谱图标的插件-->
+    <script src="js/jquery.sparkline.min.js"></script>
+    <!--消失动画的控件，可以有各种的选项-->
+    <script src="js/toggles.min.js"></script>
+    <!--用于支持视网膜设备-->
+    <script src="js/retina.min.js"></script>
+    <!--Cookie能为用户提供很多的使得，例如购物网站存储用户曾经浏览过的产品列表，或者门户网站记住用户喜欢选择浏览哪类新闻。 在用户允许的情况下，还可以存储用户的登录信息，使得用户在访问网站时不必每次都键入这些信息-->
+    <script src="js/jquery.cookies.js"></script>
+    <!--Morris.js 是一个轻量级的 JS 库，使用 jQuery 和 Raphaël 来生成各种时序图-->
+    <script src="js/morris.min.js"></script>
+    <!--下方JS用于在网页中绘制矢量图形的 Javascript 库-->
+    <script src="js/raphael-2.1.0.min.js"></script>
+    <!--下方JS优化多选框-->
+    <script src="js/chosen.jquery.min.js"></script>
+    <!--echart的控件-->
+    
+    <!-- ECharts单文件引入 -->
+    <script src="js/echarts.js"></script>
+<!--    <script src="esl.js"></script>-->
+    <script src="js/custom.js"></script>
+    
+<!--    没有用到的的js-->
+    <!--JQuery图表插件之Flot-->
+<!--    <script src="js/flot/jquery.flot.min.js"></script>-->
+<!--    <script src="js/flot/jquery.flot.resize.min.js"></script>-->
+<!--    <script src="js/flot/jquery.flot.spline.min.js"></script>-->
+<!--    <script src="data-map.js"></script>-->
+<!--    <script src="js/dashboard.js"></script>-->
+
+
+</body>
+
+</html>

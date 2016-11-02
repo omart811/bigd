@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=0B9c4204d54d25434caea29be03fb1a6"></script>
+
+    <title>全国煤炭交易数据分析平台</title>
+
+    <link href="css/style.default.css" rel="stylesheet">
+ 
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+  
+<!--  隐藏百度地图的LOGO-->
+  <style type="text/css">
+     .anchorBL {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status"><i class="fa fa-spinner fa-spin"></i>
+        </div>
+    </div>
+
+    <section>
+        <div class="leftpanel">
+            <div class="logopanel">
+                <h1><span>[</span>全国煤炭交易数据分析平台<span>]</span></h1>
+            </div>
+            <!-- logopanel -->
+
+            <div class="leftpanelinner">
+                <!-- This is only visible to small devices -->
+                <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                    <div class="media userlogged">
+                        <img alt="" src="images/photos/loggeduser.png" class="media-object">
+                        <div class="media-body">
+                            <h4>是个名字</h4>
+                            <span>"这个只有在小型设备上可见"</span>
+                        </div>
+                    </div>
+
+                    <h5 class="sidebartitle actitle">账户</h5>
+                    <ul class="nav nav-pills nav-stacked nav-bracket mb30">
+                        <li><a href="profile.html"><i class="fa fa-user"></i> <span>介绍</span></a>
+                        </li>
+                        <li><a href=""><i class="fa fa-cog"></i> <span>账户设置</span></a>
+                        </li>
+                        <li><a href=""><i class="fa fa-question-circle"></i> <span>帮助</span></a>
+                        </li>
+                        <li><a href="signout.html"><i class="fa fa-sign-out"></i> <span>退出</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <h5 class="sidebartitle">导航栏</h5>
+               <!--导航栏的内容-->
+                <ul class="nav nav-pills nav-stacked nav-bracket">
+                    <li><a href="index2.html"><i class="fa fa-home"></i><span>控制台</span></a>
+                    </li>
+                     
+                    <li class="nav-parent active"><a href=""><span class="pull-right badge badge-success">4</span><i class="fa fa-envelope-o"></i> <span>煤炭GIS</span></a>
+                        <ul class="children" style="display:block">
+                            <li><a href="gis-out.html"><i class="fa fa-caret-right"></i>煤炭运销</a></li>
+                            <li><a href="gis-position.html"><i class="fa fa-caret-right"></i>煤企分布</a></li>
+                            <li><a href="gis-port.html"><i class="fa fa-caret-right"></i>港口动态</a></li> 
+                            <li class=" active"><a href="gis-need.html"><i class="fa fa-caret-right"></i>需求企业</a></li>                                     <li><a href="gis-lushu-cs.html"><span class="pull-right badge badge-danger">测试</span>
+                            <i class="fa fa-caret-right"></i>货运追踪</a></li>
+                            <li><a href="gis-tielu.html"><i class="fa fa-caret-right"></i>铁路运输</a></li>
+                            <li><a href="gis-lushu-cs.html"><span class="pull-right badge badge-danger">开发中</span><i class="fa fa-caret-right"></i>船运追踪</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-parent"><a href=""><i class="fa fa-edit"></i> <span>图解煤炭</span></a>
+                        <ul class="children">
+                            <li><a href="gis-kucun.html"><i class="fa fa-caret-right"></i>煤炭产运需</a></li>
+                            <li><a href="gis-jinc.html"><i class="fa fa-caret-right"></i>煤炭进出口</a></li>
+                        </ul>
+                    </li>
+                     <li><a href="price.html"><i class="fa fa-th-list"></i> <span>价格中心</span></a>
+                    <li class="nav-parent"><a href=""><i class="fa fa-suitcase"></i><span>预警预测</span></a>
+                        <ul class="children">
+                            <li><a href="yuce.html"><i class="fa fa-caret-right"></i>景气监测</a></li>
+                            <li><a href="yuce2.html"><i class="fa fa-caret-right"></i>环比监测</a></li>
+                            <li><a href="yuce3.html"><i class="fa fa-caret-right"></i>同比监测</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-parent"><a href=""><i class="fa fa-file-text"></i><span>煤炭资讯</span></a>
+                        <ul class="children">                
+                            <li><a href="list.html"><i class="fa fa-caret-right"></i>独家观点</a></li>
+                            <li><a href="list1.html"><i class="fa fa-caret-right"></i>新闻动态</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gongyl.html"><i class="fa fa-th-list"></i><span>煤炭供应链查询</span></a></li>
+                    <li><a href="data-center.html"><i class="fa fa-th-list"></i><span>数据中心</span></a></li>
+                    <li class="nav-parent"><a href=""><i class="fa fa-bug"></i> <span>个人中心</span></a>
+                        <ul class="children">
+                            <li><a href="profile.html"><i class="fa fa-caret-right"></i>个人主页</a></li>
+                            <li><a href="expert-directory.html"><i class="fa fa-caret-right"></i>行业专家</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <!--导航栏的内容结束-->
+                <div class="infosummary">
+                    <h5 class="sidebartitle">主要煤炭数据展示</h5>
+                    <ul>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">环渤海动力煤指数</span>
+                                <h4>414元/吨 +0.34%</h4>
+                            </div>
+                            <div id="sidebar-chart" class="chart"></div>
+                        </li>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">动力煤期货价格</span>
+                                <h4>TC 1509 422+1.5%</h4>
+                            </div>
+                            <div id="sidebar-chart2" class="chart"></div>
+                        </li>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">海运煤炭运价综合指数</span>
+                                <h4>45.63+7.55%</h4>
+                            </div>
+                            <div id="sidebar-chart3" class="chart"></div>
+                        </li>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">进口煤炭数量</span>
+                                <h4>2200万吨</h4>
+                            </div>
+                            <div id="sidebar-chart4" class="chart"></div>
+                        </li>
+                        <li>
+                            <div class="datainfo">
+                                <span class="text-muted">港口库存总量</span>
+                                <h4>3300万吨</h4>
+                            </div>
+                            <div id="sidebar-chart5" class="chart"></div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- infosummary -->
+            </div>
+            <!-- leftpanelinner -->
+        </div>
+        <!-- leftpanel -->
+
+        <div class="mainpanel">
+            <div class="headerbar">
+                <a class="menutoggle"><i class="fa fa-bars"></i></a>
+
+                <form class="searchform" action="index.html" method="post">
+                    <input type="text" class="form-control" name="keyword" placeholder="搜索你想要的..." />
+                </form>
+
+                <div class="header-right">
+                    <ul class="headermenu">
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn btn-default dropdown-toggle tp-icon" data-toggle="dropdown">
+                                    <i class="glyphicon glyphicon-user"></i>
+                                    <span class="badge">2</span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-head pull-right">
+                                    <h5 class="title">2 个新注册的用户</h5>
+                                    <ul class="dropdown-list user-list">
+                                        <li class="new">
+                                            <div class="thumb">
+                                                <a href="">
+                                                    <img src="images/photos/user1.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h5><a href="">张三(@draniem)</a> <span class="badge badge-success">new</span></h5>
+                                            </div>
+                                        </li>
+                                        <li class="new">
+                                            <div class="thumb">
+                                                <a href="">
+                                                    <img src="images/photos/user2.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h5><a href="">李四 (@zaham)</a> <span class="badge badge-success">new</span></h5>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb">
+                                                <a href="">
+                                                    <img src="images/photos/user3.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h5><a href="">王五(@wenocar)</a></h5>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb">
+                                                <a href="">
+                                                    <img src="images/photos/user4.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h5><a href="">赵六 (@nusja)</a></h5>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb">
+                                                <a href="">
+                                                    <img src="images/photos/user5.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h5><a href="">田七 (@lane_kitmare)</a></h5>
+                                            </div>
+                                        </li>
+                                        <li class="new"><a href="">查看所有注册用户</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn btn-default dropdown-toggle tp-icon" data-toggle="dropdown">
+                                    <i class="glyphicon glyphicon-envelope"></i>
+                                    <span class="badge">1</span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-head pull-right">
+                                    <h5 class="title">你有 1 条新的信息</h5>
+                                    <ul class="dropdown-list gen-list">
+                                        <li class="new">
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user1.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">张三 <span class="badge badge-success">new</span></span>
+                                                <span class="msg">注册时候的信息..</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user2.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">李四</span>
+                                                <span class="msg">注册相关信息..</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user3.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">王五</span>
+                                                <span class="msg">重点的注册信息..</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user4.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">赵六</span>
+                                                <span class="msg">注册时候的信息..</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user5.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">田七</span>
+                                                <span class="msg">注册的重点信息.</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new"><a href="">阅读所有的.</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn btn-default dropdown-toggle tp-icon" data-toggle="dropdown">
+                                    <i class="glyphicon glyphicon-globe"></i>
+                                    <span class="badge">5</span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-head pull-right">
+                                    <h5 class="title">你有 5 条提示</h5>
+                                    <ul class="dropdown-list gen-list">
+                                        <li class="new">
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user4.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">张三 <span class="badge badge-success">new</span></span>
+                                                <span class="msg">现在关注你</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new">
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user5.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">李四 <span class="badge badge-success">new</span></span>
+                                                <span class="msg">现在关注你</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new">
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user3.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">王五 <span class="badge badge-success">new</span></span>
+                                                <span class="msg">likes your recent status</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new">
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user3.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">赵六<span class="badge badge-success">new</span></span>
+                                                <span class="msg">下载你的工作报表</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new">
+                                            <a href="">
+                                                <span class="thumb"><img src="images/photos/user3.png" alt="" /></span>
+                                                <span class="desc">
+                      <span class="name">田七<span class="badge badge-success">new</span></span>
+                                                <span class="msg">看了你2条信息</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new"><a href="">查看所有的动态</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    <img src="images/photos/loggeduser.png" alt="" />李大国
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                                    <li><a href="profile.html"><i class="glyphicon glyphicon-user"></i>我的信息</a>
+                                    </li>
+                                    <li><a href="#"><i class="glyphicon glyphicon-cog"></i> 登录设置</a>
+                                    </li>
+                                    <li><a href="#"><i class="glyphicon glyphicon-question-sign"></i> 帮助</a>
+                                    </li>
+                                    <li><a href="signin.html"><i class="glyphicon glyphicon-log-out"></i> 登出</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <button id="chatview" class="btn btn-default tp-icon chat-icon">
+                                <i class="glyphicon glyphicon-comment"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- header-right -->
+
+            </div>
+            <!-- headerbar -->
+
+            <div class="pageheader">
+                <h2><i class="fa fa-home"></i>煤炭GIS<span>我们致力用最专业的服务助力企业实力提升..</span></h2>
+                <div class="breadcrumb-wrapper">
+                    <span class="label">你现在在这里:</span>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">煤炭GIS</a>
+                        </li>
+                        <li class="active">需求企业</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="contentpanel">
+
+                <div class="row">
+                   <div class="col-md-3 col-xm-3">
+                     
+			<div  class="portlet box tabbable yellow">
+				<div  class="portlet-body">
+					<div  id="portlet_tab_1"  class="tab-pane active">
+								<div  class="tabbable tabbable-custom tabbable-full-width">			
+									 <ul class="nav nav-tabs" id="myTab">
+                                            <li class="active" ><a href="#tab_3_1" data-toggle="tab">火电</a>
+                                            </li>
+                                            <li><a href="#tab_3_2" data-toggle="tab">钢铁</a>
+                                            </li>
+                                            <li role="presentation" class="dropdown">
+                                                <a href="#" class="dropdown-toggle"  data-toggle="dropdown">其他<span class="caret"></span></a>
+                                                <ul class="dropdown-menu" >
+                                                    <li><a href="#tab_3_3" tabindex="-1" data-toggle="tab">建材</a>
+                                                    </li>
+                                                    <li><a href="#tab_3_4" tabindex="-1" data-toggle="tab">化肥</a>
+                                                    </li>
+                                                    <li><a href="#tab_3_5" tabindex="-1" data-toggle="tab">炼焦</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+									<div  class="tab-content"  tabindex="1">
+										<div  class="tab-pane active"  id="tab_3_1">
+											<div  class="form-group"  style="margin-bottom: 0px;">
+												<div  class="input-group">
+													<div  class="input-cont">
+														<input  id="keyword"  placeholder="请输入煤矿搜索关键字..."   class="form-control"  type="text">
+													</div>
+													<span  class="input-group-btn">
+														<button  class="btn btn-success"  type="submit" >查询</button>&nbsp;&nbsp;
+													</span>
+													
+												</div>
+											</div>
+												<div  class="row margin-top-10">
+													<div  class="col-md-12">
+													 	<div  style="color: red;">&nbsp;&nbsp;公司合计：18146</div>
+													</div>
+												</div>
+												<div  class="row">
+													<div  class="col-md-12">
+												<div style="height: 10px;"></div>
+                                                    <table class="table table-striped table-hover">
+                                                      <tbody id="companyBody">
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="114" onclick="showposi(0,0)">华东电网有限公司</a>
+                                                                    <br>上海市南京东路201号２２号</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="97" onclick="showposi(0,1)">广东省粤电集团有限公司</a>
+                                                                    <br>广州市天河东路2号粤电广场33-36楼</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="218807" onclick="showposi(0,2)">华电国际电力股份有限公司</a>
+                                                                    <br>山东省济南市历下区经十路14800号</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="282332" onclick="showposi(0,3)">国网河北省电力公司</a>
+                                                                    <br>石家庄市富强大街32号</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="65070" onclick="showposi(0,4)">中铝宁夏能源集团有限公司</a>
+                                                                    <br>宁夏银川市黄河东路663号</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="1" onclick="showposi(0,5)">广东国华粤电台山发电有限公司</a>
+                                                                    <br>广东台山市铜鼓湾</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="93500" onclick="showposi(0,6)">国电山东电力有限公司</a>
+                                                                    <br>山东省济南市历下区经十路9777号</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="107" onclick="showposi(0,7)">霍州煤电集团有限责任公司</a>
+                                                                    <br>霍州市鼓楼东街１８８号</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="430345" onclick="showposi(0,8))">国电建投内蒙古能源有限公司</a>
+                                                                    <br>伊旗阿镇可汗路南</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="244582" onclick="showposi(0,9)">绥中发电有限责任公司</a>
+                                                                    <br>葫芦岛市龙港区龙湾大街海月路５号</td>
+                                                            </tr>
+                                                            
+                                                        </tbody>
+                                                       
+                                                    </table>
+                                                    <nav>
+                                                      <ul class="pagination">
+                                                        <li>
+                                                          <a href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                          </a>
+                                                        </li>
+                                                        <li  class="active"><a href="#">1</a></li>
+                                                        <li><a href="#">2</a></li>
+                                                        <li><a href="#">3</a></li>
+                                                        <li><a href="#">4</a></li>
+                                                        <li><a href="#">5</a></li>
+                                                        <li>
+                                                          <a href="#" aria-label="Next">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                          </a>
+                                                        </li>
+                                                      </ul>
+                                                    </nav>
+												</div></div>
+											
+										</div>	
+										<div  class="tab-pane"  id="tab_3_2">
+											<div  class="form-group"  style="margin-bottom: 0px;">
+												<div  class="input-group">
+													<div  class="input-cont">
+														<input  id="keyword"  placeholder="请输入煤矿搜索关键字..."   class="form-control"  type="text">
+													</div>
+													<span  class="input-group-btn">
+														<button  class="btn btn-success"  type="submit" >查询</button>&nbsp;&nbsp;
+													</span>
+													
+												</div>
+											</div>
+											<div>
+												<div  class="row margin-top-10">
+													<div  class="col-md-12">
+													 	<div  style="color: red;">&nbsp;&nbsp;公司合计：12541</div>
+													</div>
+												</div>
+												<div  class="row">
+													<div  class="col-md-12">
+												<div style="height: 10px;"></div>
+                                                    <table class="table table-striped table-hover">
+                                                        
+                                                         <tbody id="companyBody">
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="114" onclick="showposi(1,0)">首钢京唐钢铁联合有限责任公司</a>
+                                                                    <br>唐山路北区建设北路８１号</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="97" onclick="showposi(1,1)">酒泉钢铁（集团）有限责任公司</a>
+                                                                    <br>甘肃省嘉峪关市雄关东路十二号</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="218807" onclick="showposi(1,3)">攀枝花钢铁有限责任公司</a>
+                                                                    <br>攀枝花市向阳村 </td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="282332" onclick="showposi(1,4)">上海梅山钢铁股份有限公司</a>
+                                                                    <br>南京市雨花台区中华门外新建</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="65070" onclick="showposi(1,5)">云南永钢钢铁集团有限公司</a>
+                                                                    <br>安宁市青龙街道恒安路附一号</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="1" onclick="showposi(1,6)">新疆八钢南疆钢铁拜城有限公司</a>
+                                                                    <br>新疆阿克苏地区拜城县重化工业园区</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="93500" onclick="showposi(1,7)">陕钢集团汉中钢铁有限责任公司</a>
+                                                                    <br>汉中市勉县定军山镇</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="107" onclick="showposi(1,8)">湖南华菱钢铁股份有限公司</a>
+                                                                    <br>湖南省长沙市天心区湘府西路222号华菱园主楼</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="430345" onclick="showposi(1,9)">云南永钢钢铁集团永昌钢铁有限公司</a>
+                                                                    <br>安宁市青龙街道办事处恒安路附一号</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="244582" onclick="showposi(1,10)">北京首钢股份有限公司</a>
+                                                                    <br>北京市石景山区石景山路</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div id="page">
+                                                        <ul class="pagination">                                                        
+                                                            <li class="prev disabled"><a  href="#">&lt;</a></li>
+                                                            <li class="active"><a href="##">1</a></li>
+                                                            <li><a  href="#">2</a></li>
+                                                            <li><a  href="#">3</a></li>
+                                                            <li><a  href="#">4</a> </li>
+                                                            <li><a  href="#">5</a></li>
+                                                            <li class="next"><a  href="#">&gt;</a></li>                                                            
+                                                        </ul>
+                                                    </div>
+												</div></div>
+											</div>
+										</div>		
+										<div  class="tab-pane"  id="tab_3_3">
+											<div  class="form-group"  style="margin-bottom: 0px;">
+												<div  class="input-group">
+													<div  class="input-cont">
+														<input  id="keyword"  placeholder="请输入煤矿搜索关键字..."   class="form-control"  type="text">
+													</div>
+													<span  class="input-group-btn">
+														<button  class="btn btn-success"  type="submit" >查询</button>&nbsp;&nbsp;
+													</span>
+													
+												</div>
+											</div>
+											<div>
+												<div  class="row margin-top-10">
+													<div  class="col-md-12">
+													 	<div  style="color: red;">&nbsp;&nbsp;公司合计：32541</div>
+													</div>
+												</div>
+												<div  class="row">
+													<div  class="col-md-12">
+												<div style="height: 10px;"></div>
+                                                    <table class="table table-striped table-hover">
+                                                        
+                                                         <tbody id="companyBody">
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="114" onclick="showposi(2,0)">北方水泥有限公司</a>
+                                                                    <br>北京市海淀区三里河路甲11号中国建材大厦17层</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="97" onclick="showposi(2,1)">葛洲坝集团水泥有限公司</a>
+                                                                    <br>湖北省荆门市东宝区泉口路21号</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="218807" onclick="showposi(2,3)">山东泉兴中联水泥有限公司</a>
+                                                                    <br>枣庄市高新区光源路77号 </td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="282332" onclick="showposi(2,4)">四川西南水泥有限公司</a>
+                                                                    <br>成都高新区天泰路112号16楼</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="65070" onclick="showposi(2,5)">中材水泥有限责任公司</a>
+                                                                    <br>北京市西城区北展北街17号楼5层</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="1" onclick="showposi(2,6)">山西山水水泥有限公司</a>
+                                                                    <br>太原市小店区长风街132号长风大厦26层</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="93500" onclick="showposi(2,7)">山东金晶科技股份有限公司</a>
+                                                                    <br>淄博市高新技术开发区宝石镇王庄</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="107" onclick="showposi(2,8)">新疆青松建材有限责任公司</a>
+                                                                    <br>新疆乌鲁木齐市达坂城区祁家沟</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="430345" onclick="showposi(2,9)">唐山冀东水泥股份有限公司</a>
+                                                                    <br>唐山市丰润区林荫路</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="244582" onclick="showposi(2,10)">吉林亚泰水泥有限公司</a>
+                                                                    <br>双阳区奢岭街道办事处东400米</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div id="page">
+                                                        <ul class="pagination">                                                        
+                                                            <li class="prev disabled"><a  href="#">&lt;</a></li>
+                                                            <li class="active"><a  href="##">1</a></li>
+                                                            <li><a  href="#">2</a></li>
+                                                            <li><a  href="#">3</a></li>
+                                                            <li><a  href="#">4</a> </li>
+                                                            <li><a  href="#">5</a></li>
+                                                            <li class="next"><a  href="#">&gt;</a></li>                                                            
+                                                        </ul>
+                                                    </div>
+												</div></div>
+											</div>
+										</div>	
+										<div  class="tab-pane"  id="tab_3_4">
+											<div  class="form-group"  style="margin-bottom: 0px;">
+												<div  class="input-group">
+													<div  class="input-cont">
+														<input  id="keyword"  placeholder="请输入煤矿搜索关键字..."   class="form-control"  type="text">
+													</div>
+													<span  class="input-group-btn">
+														<button  class="btn btn-success"  type="submit" >查询</button>&nbsp;&nbsp;
+													</span>
+													
+												</div>
+											</div>
+											<div>
+												<div  class="row margin-top-10">
+													<div  class="col-md-12">
+													 	<div  style="color: red;">&nbsp;&nbsp;公司合计：42541</div>
+													</div>
+												</div>
+												<div  class="row">
+													<div  class="col-md-12">
+												<div style="height: 10px;"></div>
+                                                    <table class="table table-striped table-hover">
+                                                        
+                                                         <tbody id="companyBody">
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="114" onclick="showposi(3,0)">湖北宜化松滋肥业有限公司</a>
+                                                                    <br>松滋市陈店镇全心村（临港工业园通港大道旁）</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="97" onclick="showposi(3,1)">贵州西洋肥业有限公司</a>
+                                                                    <br>贵州省息烽县温泉镇尹庵村</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="218807" onclick="showposi(3,3)">新疆金圣胡杨化工有限公司</a>
+                                                                    <br>新疆阿克苏地区沙雅县循环经济工业园区 </td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="282332" onclick="showposi(3,4)">邛崃市鸿丰钾矿肥有限责任公司</a>
+                                                                    <br>成都市邛崃市道佐乡皮坝村1组66号</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="65070" onclick="showposi(3,5)">安徽省司尔特肥业股份有限公司</a>
+                                                                    <br>安徽省宁国经济技术开发区</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="1" onclick="showposi(3,6)">广西河池化工股份有限公司</a>
+                                                                    <br>广西河池市六甲镇</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="93500" onclick="showposi(3,7)">青海文通盐桥化肥有限公司</a>
+                                                                    <br>青海格尔木市察尔汗盐湖发展大道</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="107" onclick="showposi(3,8)">宁夏丰友化工股份有限公司</a>
+                                                                    <br>银川市西夏区北京西路750号</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="430345" onclick="showposi(3,9)">湖北三宁化工股份有限公司</a>
+                                                                    <br>枝江市姚家港沿江路9号</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="244582" onclick="showposi(3,10)">沧州大化股份有限公司</a>
+                                                                    <br>沧州市运河区永济东路19号</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div id="page">
+                                                        <ul class="pagination">                                                        
+                                                            <li class="prev disabled"><a  href="#">&lt;</a></li>
+                                                            <li class="active"><a  href="##">1</a></li>
+                                                            <li><a  href="#">2</a></li>
+                                                            <li><a  href="#">3</a></li>
+                                                            <li><a  href="#">4</a> </li>
+                                                            <li><a  href="#">5</a></li>
+                                                            <li class="next"><a  href="#">&gt;</a></li>                                                            
+                                                        </ul>
+                                                    </div>
+												</div></div>
+											</div>
+										</div>	
+										<div  class="tab-pane"  id="tab_3_5">
+											<div  class="form-group"  style="margin-bottom: 0px;">
+												<div  class="input-group">
+													<div  class="input-cont">
+														<input  id="keyword"  placeholder="请输入煤矿搜索关键字..."   class="form-control"  type="text">
+													</div>
+													<span  class="input-group-btn">
+														<button  class="btn btn-success"  type="submit" >查询</button>&nbsp;&nbsp;
+													</span>
+													
+												</div>
+											</div>
+											<div>
+												<div  class="row margin-top-10">
+													<div  class="col-md-12">
+													 	<div  style="color: red;">&nbsp;&nbsp;公司合计：52541</div>
+													</div>
+												</div>
+												<div  class="row">
+													<div  class="col-md-12">
+												<div style="height: 10px;"></div>
+                                                    <table class="table table-striped table-hover">
+                                                        
+                                                         <tbody id="companyBody">
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="114" onclick="showposi(4,0)">云南曲靖麒麟煤化工有限公司</a>
+                                                                    <br>云南省曲靖市麒麟区越州工业发展基地</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="97" onclick="showposi(4,1)">河北永顺实业集团有限公司</a>
+                                                                    <br>唐山市古冶区吕家坨村</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="218807" onclick="showposi(4,3)">拜城县众泰煤焦化有限公司</a>
+                                                                    <br>新疆阿克苏地区拜城县重工业园区 </td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="#" style="color:green;" id="282332" onclick="showposi(4,4)">山东盛阳集团有限公司</a>
+                                                                    <br>罗庄区傅庄办事处殷旦子村</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="65070" onclick="showposi(4,5)">山西茂胜煤化集团有限公司</a>
+                                                                    <br>山西省晋中市介休市连福镇大许村</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="1" onclick="showposi(4,6)">阜康市晋泰实业有限公司</a>
+                                                                    <br>阜康市冶炼厂以东一公里处</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="93500" onclick="showposi(4,7)">柳林县联山煤化有限公司</a>
+                                                                    <br>山西省柳林县薛村镇高红村</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="107" onclick="showposi(4,8)">榆林市榆神工业区华航能源有限公司</a>
+                                                                    <br>榆神工业区清水工业园区北纬9路北段</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="430345" onclick="showposi(4,9)">河津市太兴煤焦化工有限公司</a>
+                                                                    <br>曲靖大为焦化制供气有限公司</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td><a href="##" style="color:green;" id="244582" onclick="showposi(4,10)">曲靖大为焦化制供气有限公司</a>
+                                                                    <br>曲靖市沾益县盘江镇花山工业园区</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div id="page">
+                                                        <ul class="pagination">                                                        
+                                                            <li class="prev disabled"><a  href="#">&lt;</a></li>
+                                                            <li class="active"><a  href="##">1</a></li>
+                                                            <li><a  href="#">2</a></li>
+                                                            <li><a  href="#">3</a></li>
+                                                            <li><a  href="#">4</a> </li>
+                                                            <li><a  href="#">5</a></li>
+                                                            <li class="next"><a  href="#">&gt;</a></li>                                                            
+                                                        </ul>
+                                                    </div>
+												</div></div>
+											</div>
+										</div>					
+									</div>
+								</div>
+							</div>
+				</div>
+			</div>
+
+                   </div>
+                    <div class="col-md-9">
+                        <div class="panel panel-default">
+                        <div class="panel-body">
+                              <input type="button" class="btn btn-success" value="火电企业" onclick="start1()"/>                                     
+                              <input type="button" class="btn btn-info" value="钢铁企业" onclick="start2()"/>
+                               <input type="button" class="btn btn-info" value="其他企业" onclick="start3()"/>
+                               
+                                <input type="button" class="btn btn-warning" value="停止" onclick="stop()"/>
+                               <input type="button" class="btn btn-default "  disabled="disabled" value="数据均为模拟" onclick="stop()"/>                  
+                              <hr/>
+                              <div id="gisPosition" style="width:100%; height:740px;" ></div>
+                              
+                        </div>
+                        <!-- panel-heading -->
+                        
+                    </div>
+                    </div>
+                    
+                    <!-- panel -->
+
+                </div>
+                <!-- row -->
+
+            </div>
+            <!-- contentpanel -->
+
+        </div>
+        <!--mainpanel -->
+
+
+
+        <div class="rightpanel">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#rp-alluser" data-toggle="tab"><i class="fa fa-users"></i></a>
+                </li>
+                <li><a href="#rp-favorites" data-toggle="tab"><i class="fa fa-heart"></i></a>
+                </li>
+                <li><a href="#rp-history" data-toggle="tab"><i class="fa fa-clock-o"></i></a>
+                </li>
+                <li><a href="#rp-settings" data-toggle="tab"><i class="fa fa-gear"></i></a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="rp-alluser">
+                    <h5 class="sidebartitle">在线的人</h5>
+                    <ul class="chatuserlist">
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/userprofile.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>张三</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user1.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <span class="pull-right badge badge-danger">2</span>
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user2.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user3.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user4.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                    </ul>
+
+                    <div class="mb30"></div>
+
+                    <h5 class="sidebartitle">Offline Users</h5>
+                    <ul class="chatuserlist">
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user5.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>Eileen Sideways</strong>
+                                    <small>Los Angeles, CA</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user2.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user3.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>Nusja Nawancali</strong>
+                                    <small>Bangkok, Thailand</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user4.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user5.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user4.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user5.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="rp-favorites">
+                    <h5 class="sidebartitle">喜欢的</h5>
+                    <ul class="chatuserlist">
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user2.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user1.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user3.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user4.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user5.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>李四</strong>
+                                    <small>洛杉矶, 华盛顿</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="rp-history">
+                    <h5 class="sidebartitle">历史</h5>
+                    <ul class="chatuserlist">
+                        <li class="online">
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user4.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>王五</strong>
+                                    <small>你好，咱们今天下午见面可以吗？在花园~！.</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user2.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>王五</strong>
+                                    <small>你好，咱们今天下午见面可以吗？在花园~！.</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                        <li>
+                            <div class="media">
+                                <a href="#" class="pull-left media-thumb">
+                                    <img alt="" src="images/photos/user3.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <strong>王五</strong>
+                                    <small>你好，咱们今天下午见面可以吗？在花园~！.</small>
+                                </div>
+                            </div>
+                            <!-- media -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane pane-settings" id="rp-settings">
+
+                    <h5 class="sidebartitle mb20">设置</h5>
+                    <div class="form-group">
+                        <label class="col-xs-8 control-label">现在不现在的</label>
+                        <div class="col-xs-4 control-label">
+                            <div class="toggle toggle-success"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-xs-8 control-label">允许历史</label>
+                        <div class="col-xs-4 control-label">
+                            <div class="toggle toggle-success"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-xs-8 control-label">现在所有名字</label>
+                        <div class="col-xs-4 control-label">
+                            <div class="toggle-chat1 toggle-success"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-xs-8 control-label">显示所在地</label>
+                        <div class="col-xs-4 control-label">
+                            <div class="toggle toggle-success"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- tab-pane -->
+
+            </div>
+            <!-- tab-content -->
+        </div>
+        <!-- rightpanel -->
+    </section>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="layer/layer.js"></script>  
+     <script src="layer/extend/layer.ext.js"></script>    
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <!--jquery ui-->
+    <script src="js/jquery-ui-1.10.3.min.js"></script>
+    <!--强大的框架-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--Modernizr：专为HTML5和CSS3开发的功能检测类库-->
+    <script src="js/modernizr.min.js"></script>
+    <!--绘制波谱图标的插件-->
+    <script src="js/jquery.sparkline.min.js"></script>
+    <!--消失动画的控件，可以有各种的选项-->
+    <script src="js/toggles.min.js"></script>
+    <!--用于支持视网膜设备-->
+    <script src="js/retina.min.js"></script>
+    <!--Cookie能为用户提供很多的使得，例如购物网站存储用户曾经浏览过的产品列表，或者门户网站记住用户喜欢选择浏览哪类新闻。 在用户允许的情况下，还可以存储用户的登录信息，使得用户在访问网站时不必每次都键入这些信息-->
+    <script src="js/jquery.cookies.js"></script>
+
+    <!--Morris.js 是一个轻量级的 JS 库，使用 jQuery 和 Raphaël 来生成各种时序图-->
+    <script src="js/morris.min.js"></script>
+    <!--下方JS用于在网页中绘制矢量图形的 Javascript 库-->
+    <script src="js/raphael-2.1.0.min.js"></script>
+    <!--下方JS优化多选框-->
+    <script src="js/chosen.jquery.min.js"></script>
+    <!--echart的控件-->
+    <!-- ECharts单文件引入 -->
+    <script src="js/custom.js"></script>
+    <script src="charts-js/gis-need.js"></script>
+
+</body>
+
+</html>
